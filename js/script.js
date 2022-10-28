@@ -178,9 +178,30 @@
 // }
 
 // console.log(checkStorage(30, 20));
-
 // let a = 11;
-
 // a %= 2;
-
 // console.log(a);
+
+// // Task # 18
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   const totalPrice = pricePerDroid * orderedQuantity;
+
+//   if (totalPrice > customerCredits) {
+//     message = 'Insufficient fund!';
+//   } else {
+//     customerCredits -= totalPrice;
+//     message = `You ordered ${orderedQuantity} droids, you have ${customerCredits} credits left`;
+//   }
+//   return message;
+// }
+
+// console.log(makeTransaction(3000, 5, 23000));
+// console.log(makeTransaction(1000, 3, 15000));
+// console.log(makeTransaction(5000, 10, 8000));
+// console.log(makeTransaction(2000, 8, 10000));
+// console.log(makeTransaction(500, 10, 5000));
+
+// // End task #18
+
+//
