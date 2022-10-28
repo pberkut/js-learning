@@ -132,3 +132,55 @@
 //   return message;
 // }
 // console.log(isAdult(18));
+
+// // Task # 14
+// function isValidPassword(password) {
+//   const SAVED_PASSWORD = 'jqueryismyjam';
+//   const isMatch = SAVED_PASSWORD === password;
+
+//   return isMatch;
+// }
+// console.log(isValidPassword('jqueryismyjam'));
+
+// // Task # 15
+// let cost;
+// const subscription = 'pro';
+// if (subscription === 'pro') {
+//   cost = 100;
+// } else {
+//   cost = 0;
+// }
+// console.log(cost);
+
+// function checkAge(age) {
+//   let message;
+//   if (age >= 18) {
+//     // Change this line
+//     message = 'You are an adult';
+//   } else {
+//     message = 'You are a minor';
+//   }
+//   return message;
+// }
+// console.log(checkAge(16));
+
+// // Task # 16
+// function checkStorage(evailable, ordered) {
+//   let message;
+
+//   if (evailable < ordered) {
+//     message = 'Not enough good in stock!';
+//   } else {
+//     message = 'Order is processed, our manager will contact with you.';
+//   }
+
+//   return message;
+// }
+
+// console.log(checkStorage(30, 20));
+
+// let a = 11;
+
+// a %= 2;
+
+// console.log(a);
