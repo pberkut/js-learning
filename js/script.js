@@ -204,4 +204,66 @@
 
 // // End task #18
 
-//
+// Task # 19
+// let cost;
+// const subscription = 'premium';
+
+// if (subscription === 'free') {
+//   cost = 0;
+// } else if (subscription === 'pro') {
+//   cost = 100;
+// } else if (subscription === 'premium') {
+//   cost = 500;
+// } else {
+//   console.log(`Inavalid subscription type - ${subscription}`);
+// }
+
+// console.log(cost);
+
+// -------
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
+
+//   if (password === null) {
+//     message = 'Canceled by user!';
+//   } else if (password === ADMIN_PASSWORD) {
+//     message = 'Welcome!';
+//   } else {
+//     message = 'Acess denied, wrong password!';
+//   }
+
+//   return message;
+// }
+
+// console.log(checkPassword('mangohackzor'));
+// console.log(checkPassword(null));
+// console.log(checkPassword('jqueryismyjam'));
+
+// End task # 19
+
+// // Task # 20
+
+// function checkStorage(available, ordered) {
+//   let message;
+
+//   if (ordered === 0) {
+//     message = 'There are no products in the order!';
+//   } else if (ordered > available) {
+//     message = 'Your order is too large, there are not enough items in stock!';
+//   } else {
+//     message = 'The order is accepted, our manager will contact you';
+//   }
+
+//   return message;
+// }
+
+// console.log(checkStorage(100, 50));
+// console.log(checkStorage(100, 130));
+// console.log(checkStorage(70, 0));
+// console.log(checkStorage(200, 20));
+// console.log(checkStorage(200, 250));
+// console.log(checkStorage(150, 0));
+
+// // End task # 20
