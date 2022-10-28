@@ -267,3 +267,65 @@
 // console.log(checkStorage(150, 0));
 
 // // End task # 20
+
+// // Task # 21
+// function isNumberInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+
+//   return isInRange;
+// }
+
+// console.log(isNumberInRange(10, 30, 17));
+// console.log(isNumberInRange(10, 30, 5));
+// console.log(isNumberInRange(10, 30, 24));
+// console.log(isNumberInRange(10, 30, 70));
+
+// // Task 22
+// function checkIfCanAccessContent(subType) {
+//   const canAccessContent = subType === 'pro' || subType === 'vip'; // Change this line
+
+//   return canAccessContent;
+// }
+
+// console.log(checkIfCanAccessContent('pro'));
+// console.log(checkIfCanAccessContent('starter'));
+// console.log(checkIfCanAccessContent('vip'));
+// console.log(checkIfCanAccessContent('free'));
+
+// Task 23
+// function isNumberNotInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+//   const isNotInRange = !isInRange; // Change this line
+
+//   return isNotInRange;
+// }
+
+// Task # 24
+
+// function getDiscount(totalSpent) {
+//   const BASE_DISCOUNT = 0;
+//   const BRONZE_DISCOUNT = 0.02;
+//   const SILVER_DISCOUNT = 0.05;
+//   const GOLD_DISCOUNT = 0.1;
+//   let discount;
+//   // Change code below this line
+//   if (totalSpent >= 50000) {
+//     discount = GOLD_DISCOUNT;
+//   } else if (totalSpent >= 20000 && totalSpent < 50000) {
+//     discount = SILVER_DISCOUNT;
+//   } else if (totalSpent >= 5000 && totalSpent < 20000) {
+//     discount = BRONZE_DISCOUNT;
+//   } else {
+//     discount = BASE_DISCOUNT;
+//   }
+//   // Change code above this line
+//   return discount;
+// }
+
+// console.log(`Your discount = ${getDiscount(46900) * 100}%`);
+// console.log(`Your discount = ${getDiscount(137000) * 100}%`);
+// console.log(`Your discount = ${getDiscount(8250) * 100}%`);
+// console.log(`Your discount = ${getDiscount(1300) * 100}%`);
+// console.log(`Your discount = ${getDiscount(5000) * 100}%`);
+// console.log(`Your discount = ${getDiscount(20000) * 100}%`);
+// console.log(`Your discount = ${getDiscount(50000) * 100}%`);
