@@ -380,43 +380,61 @@
 // console.log(checkPassword('polyhax'));
 // console.log(checkPassword('jqueryismyjam'));
 
-// Task 29
-function getShippingCost(country) {
-  let message;
-  // Change code below this line
-  let price;
-  switch (country) {
-    case 'China':
-      price = 100;
-      message = `Shipping to ${country} will cost ${price} credits`;
-      break;
+// // Task 29
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+//   let price;
+//   switch (country) {
+//     case 'China':
+//       price = 100;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
 
-    case 'Chile':
-      price = 250;
-      message = `Shipping to ${country} will cost ${price} credits`;
-      break;
+//     case 'Chile':
+//       price = 250;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
 
-    case 'Australia':
-      price = 170;
-      message = `Shipping to ${country} will cost ${price} credits`;
-      break;
+//     case 'Australia':
+//       price = 170;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
 
-    case 'Jamaica':
-      price = 120;
-      message = `Shipping to ${country} will cost ${price} credits`;
-      break;
+//     case 'Jamaica':
+//       price = 120;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
 
-    default:
-      message = 'Sorry, there is no delivery to your country';
-  }
-  // Change code above this line
-  return message;
-}
+//     default:
+//       message = 'Sorry, there is no delivery to your country';
+//   }
+//   // Change code above this line
+//   return message;
+// }
 
-console.log(getShippingCost('Australia'));
-console.log(getShippingCost('Germany'));
-console.log(getShippingCost('China'));
-console.log(getShippingCost('Chile'));
-console.log(getShippingCost('Jamaica'));
-console.log(getShippingCost('Sweden'));
-// End task 29
+// console.log(getShippingCost('Australia'));
+// console.log(getShippingCost('Germany'));
+// console.log(getShippingCost('China'));
+// console.log(getShippingCost('Chile'));
+// console.log(getShippingCost('Jamaica'));
+// console.log(getShippingCost('Sweden'));
+// // End task 29
+
+// // Task 30
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+//   return message;
+// }
+
+// // Task 31
+// const productName = 'Repaier droid';
+
+// console.log(productName.length);
+// console.log(productName[0]);
+// console.log(productName[5]);
+// console.log(productName[11]);
+// console.log(productName[productName.length - 1]);
+
+// Task 32
