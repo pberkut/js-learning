@@ -477,3 +477,52 @@
 // console.log(formatMessage('Nunc sed turpis a felis in nunc fringilla', 41));
 
 // Task 34
+// console.log('saMsUng' === 'samsung');
+// console.log('saMsUng' === 'SAMSUNG');
+
+// const BRAND_NAME = 'SAMSUNG';
+// const userInput = 'saMsUng';
+// const normalizedToUpperCaseInput = userInput.toUpperCase();
+
+// console.log(userInput);
+// console.log(userInput === BRAND_NAME);
+// console.log(normalizedToUpperCaseInput);
+// console.log(normalizedToUpperCaseInput === BRAND_NAME);
+
+// Task 35
+// const productName = 'Repair droid';
+
+// console.log(productName.includes('a'));
+// console.log(productName.includes('A'));
+// console.log(productName.includes('droid'));
+// console.log(productName.includes('Droid'));
+// console.log(productName.includes('Repair'));
+// console.log(productName.includes('repair'));
+
+// function checkForName(fullName, name) {
+//   const result = fullName.includes(name);
+
+//   return result;
+// }
+
+// console.log(checkForName('Egor Kolbasov', 'Egor'));
+// console.log(checkForName('Egor Kolbasov', 'egor'));
+// console.log(checkForName('Egor Kolbasov', 'EgOr'));
+// console.log(checkForName('Egor Kolbasov', 'Egors'));
+
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+  message = message.toLowerCase();
+  result = message.includes('spam') || message.includes('sale');
+  // Change code above this line
+  return result;
+}
+
+console.log(checkForSpam('Latest technology news'));
+console.log(checkForSpam('JavaScript weekly newsletter'));
+console.log(checkForSpam('Get best sale offers now!'));
+console.log(checkForSpam('Amazing SalE, only tonight!'));
+console.log(checkForSpam('Trust me, this is not a spam message'));
+console.log(checkForSpam('Get rid of sPaM emails. Our book in on sale!'));
+console.log(checkForSpam('[SPAM] How to earn fast money?'));
