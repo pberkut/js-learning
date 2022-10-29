@@ -438,3 +438,42 @@
 // console.log(productName[productName.length - 1]);
 
 // Task 32
+// const productName = 'Repair droid';
+// console.log(productName.slice(0, 4));
+// console.log(productName.slice(3, 9));
+// console.log(productName.slice(0, productName.length));
+// console.log(productName.slice(7, productName.length));
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length);
+
+//   return substring;
+// }
+
+// console.log(getSubstring('Hello world', 3));
+// console.log(getSubstring('Hello world', 6));
+// console.log(getSubstring('Hello world', 8));
+// console.log(getSubstring('Hello world', 11));
+// console.log(getSubstring('Hello world', 0));
+
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   if (message.length <= maxLength) {
+//     result = message;
+//   } else {
+//     result = `${message.slice(0, maxLength)}...`;
+//   }
+//   /// Change code above this line
+//   return result;
+// }
+
+// console.log('Curabitur ligula sapien'.length);
+// console.log(formatMessage('Curabitur ligula sapien', 16));
+// console.log(formatMessage('Curabitur ligula sapien', 23));
+// console.log(formatMessage('Vestibulum facilisis purus nec', 20));
+// console.log(formatMessage('Vestibulum facilisis purus nec', 30));
+// console.log(formatMessage('Nunc sed turpis a felis in nunc fringilla', 15));
+// console.log(formatMessage('Nunc sed turpis a felis in nunc fringilla', 41));
+
+// Task 34
