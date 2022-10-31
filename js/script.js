@@ -529,8 +529,72 @@
 
 // Arrays
 
-const clients = ['Mango', 'Poly', 'Ajax', 'Stars', 'Planet', 'Dots'];
+const clients = ['Mango', 'Poly', 'Ajax', 'Stars', 'Planet', 'Dots', 'Games', 'Last'];
 
 // console.log(clients[2]);
 // console.log(clients[1]);
 // console.log(clients[0]);
+
+// clients[0] = 'Master';
+// console.log(clients[0]);
+
+// console.log(clients.length);
+
+// const lastElementIndex = clients.length - 1;
+// console.log(lastElementIndex);
+// console.log(`Last element in array: "${clients[lastElementIndex]}", Number index: ${lastElementIndex}`);
+
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log(i, clients[i]);
+//   // console.log(`${i}, ${clients[i]}`);
+// }
+
+// for (const client of clients) {
+//   console.log(client);
+// }
+
+// const string = 'javascript';
+
+// for (const character of string) {
+//   console.log(character);
+// }
+
+// // Example
+// const clientNameToFind = 'Poly';
+// let message;
+
+// for (const client of clients) {
+//   if (client === clientNameToFind) {
+//     message = 'Клиент с таким именем есть в базе данных!';
+//     break;
+//   }
+
+//   message = 'Клиента с таким именем нету в базе данных!';
+// }
+
+// console.log(message);
+
+// // Example
+// const clientNameToFind = 'Poly';
+// let message = 'Клиент с таким именем нету в базе данных!';
+
+// for (const client of clients) {
+//   if (client === clientNameToFind) {
+//     message = 'Клиент с таким именем есть в базе данных!';
+//     break;
+//   }
+// }
+
+// console.log(message);
+
+// // Example
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] < threshold) {
+//     continue;
+//   }
+
+//   console.log(`Число больше чем ${threshold}; ${numbers[i]}`);
+// }
