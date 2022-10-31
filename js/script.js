@@ -529,7 +529,7 @@
 
 // Arrays
 
-const clients = ['Mango', 'Poly', 'Ajax', 'Stars', 'Planet', 'Dots', 'Games', 'Last'];
+// const clients = ['Mango', 'Poly', 'Ajax', 'Stars', 'Planet', 'Dots', 'Games', 'Last'];
 
 // console.log(clients[2]);
 // console.log(clients[1]);
@@ -598,3 +598,155 @@ const clients = ['Mango', 'Poly', 'Ajax', 'Stars', 'Planet', 'Dots', 'Games', 'L
 
 //   console.log(`Число больше чем ${threshold}; ${numbers[i]}`);
 // }
+
+// Example
+// let a = 5;
+// let b = a;
+
+// console.log(a);
+// console.log(b);
+
+// a = 10;
+// console.log(a);
+// console.log(b);
+
+// // Example
+// const a = ['Mango'];
+// const b = a;
+
+// console.log(a);
+// console.log(b);
+
+// a.push('Poly');
+// console.log(a);
+// console.log(b);
+
+// b.push('Ajax');
+// console.log(a);
+// console.log(b);
+
+// // Example Method split
+// const name = 'Mango';
+// console.log(name.split(''));
+
+// const message = 'JavaScript это интересно';
+// console.log(message.split(' '));
+
+// // Example Method Join
+// const words = ['JavaScript', 'это', 'интересно'];
+// console.log(words.join(''));
+// console.log(words.join(' '));
+// console.log(words.join('-'));
+
+//  Method indexOf()
+// const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// console.log(clients.indexOf('Poly'));
+// console.log(clients.indexOf('Mono'));
+
+// console.log(clients.includes('Poly'));
+// console.log(clients.includes('Mono'));
+
+// Проверка множественных условий с includes()
+// const fruit = 'apple';
+
+// if (fruit === 'apple' || fruit === 'strawberry') {
+//   console.log('It is a red fruit!');
+// }
+
+// const fruit = 'apple';
+
+// if (fruit === 'apple' || fruit === 'strawberry' || fruit === 'cherry' || fruit === 'cranberries') {
+//   console.log('It is a red fruit!');
+// }
+
+// // Выносим варианты в массив
+// const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+// const fruit = 'cherry';
+// // Проверяем наличие элемента
+// const hasFruit = redFruits.includes(fruit);
+
+// if (hasFruit) {
+//   console.log(`${fruit} is a red fruit!`);
+// }
+
+// // push
+// const numbers = [];
+// console.log(numbers);
+
+// numbers.push(1);
+// console.log(numbers);
+
+// numbers.push(2);
+// console.log(numbers);
+
+// numbers.push(3);
+// console.log(numbers);
+
+// numbers.push(4);
+// console.log(numbers);
+
+// numbers.push(5);
+// console.log(numbers);
+
+// // pop
+// const numbers = [1, 2, 3, 4, 5];
+
+// console.log(numbers.pop());
+// console.log(numbers);
+
+// console.log(numbers.pop());
+// console.log(numbers);
+
+// console.log(numbers.pop());
+// console.log(numbers);
+
+// console.log(numbers.pop());
+// console.log(numbers);
+
+// console.log(numbers.pop());
+// console.log(numbers);
+
+// console.log(numbers.pop());
+// console.log(numbers);
+
+// const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi', 'Star', 'Planet'];
+// console.log(clients.slice());
+// console.log(clients.slice(1, 3));
+// console.log(clients.slice(1));
+// console.log(clients.slice(2));
+// console.log(clients.slice(-2));
+
+// Метод splice
+// const scores = [1, 2, 3, 4, 5];
+// const deletedScores = scores.splice(0, 3);
+// console.log(scores);
+// console.log(deletedScores);
+
+// const colors = ['red', 'green', 'blue'];
+// console.log(colors);
+// colors.splice(2, 0, 'purple');
+// console.log(colors);
+// colors.splice(1, 0, 'yellow', 'pink');
+// console.log(colors);
+
+// const languages = ['C', 'C++', 'Java', 'JavaScript'];
+// console.log(languages);
+// languages.splice(1, 1, 'Python');
+// console.log(languages);
+// languages.splice(2, 1, 'C#', 'Swift', 'Go');
+// console.log(languages);
+
+// //Метод concat()
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Monkong', 'Singu'];
+// console.log(oldClients);
+// console.log(newClients);
+// const allClientsWithOldFirst = oldClients.concat(newClients);
+// console.log(allClientsWithOldFirst);
+// const allClientsWithNewFirst = newClients.concat(oldClients);
+// console.log(allClientsWithNewFirst);
+// console.log(oldClients);
+// console.log(newClients);
+// // test
+// newClients.concat(oldClients);
+// console.log(newClients);
