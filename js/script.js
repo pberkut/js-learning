@@ -510,19 +510,27 @@
 // console.log(checkForName('Egor Kolbasov', 'EgOr'));
 // console.log(checkForName('Egor Kolbasov', 'Egors'));
 
-function checkForSpam(message) {
-  let result;
-  // Change code below this line
-  message = message.toLowerCase();
-  result = message.includes('spam') || message.includes('sale');
-  // Change code above this line
-  return result;
-}
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   message = message.toLowerCase();
+//   result = message.includes('spam') || message.includes('sale');
+//   // Change code above this line
+//   return result;
+// }
 
-console.log(checkForSpam('Latest technology news'));
-console.log(checkForSpam('JavaScript weekly newsletter'));
-console.log(checkForSpam('Get best sale offers now!'));
-console.log(checkForSpam('Amazing SalE, only tonight!'));
-console.log(checkForSpam('Trust me, this is not a spam message'));
-console.log(checkForSpam('Get rid of sPaM emails. Our book in on sale!'));
-console.log(checkForSpam('[SPAM] How to earn fast money?'));
+// console.log(checkForSpam('Latest technology news'));
+// console.log(checkForSpam('JavaScript weekly newsletter'));
+// console.log(checkForSpam('Get best sale offers now!'));
+// console.log(checkForSpam('Amazing SalE, only tonight!'));
+// console.log(checkForSpam('Trust me, this is not a spam message'));
+// console.log(checkForSpam('Get rid of sPaM emails. Our book in on sale!'));
+// console.log(checkForSpam('[SPAM] How to earn fast money?'));
+
+// Arrays
+
+const clients = ['Mango', 'Poly', 'Ajax', 'Stars', 'Planet', 'Dots'];
+
+// console.log(clients[2]);
+// console.log(clients[1]);
+// console.log(clients[0]);
