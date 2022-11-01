@@ -758,6 +758,8 @@
 
 // console.table(array);
 
-// const numbers1 = [1, 2, 3];
-// const numbers2 = [1, 2, 3];
-// console.log(numbers1 === numbers2);
+const numbers1 = [1, 2, 3];
+const numbers2 = [1, 2, 3];
+const numbers3 = numbers1;
+console.log(numbers1 === numbers2);
+console.log(numbers1 === numbers3);
