@@ -763,3 +763,17 @@
 // const numbers3 = numbers1;
 // console.log(numbers1 === numbers2);
 // console.log(numbers1 === numbers3);
+
+// Example
+// const array = ['Alina', 'Pavel', 'Timur', 'Kira', 'Denis'];
+
+// for (let i = 0; i < array.length; i += 1) {
+//   console.log(`Name # ${i}:`, array[i]);
+//   array[i] += '-1';
+//   console.log(array[i]);
+// }
+// console.table(array);
+
+// for (const name of array) {
+//   console.log(name);
+// }
