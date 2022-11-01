@@ -777,3 +777,20 @@
 // for (const name of array) {
 //   console.log(name);
 // }
+
+// Example PAYMENT Посчитать общую сумму ы корзине
+const cart = [54, 28, 105, 70, 92, 17, 120, 90, 12, 22, 222];
+let total = 0;
+
+for (let i = 0; i < cart.length; i += 1) {
+  console.log(cart[i]);
+  cart[i] = Math.round(cart[i] * 1.1);
+  total += cart[i];
+}
+
+// for (const value of cart) {
+//   console.log(value);
+//   total += value;
+// }
+
+console.log('Total :', total);
