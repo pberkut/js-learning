@@ -750,3 +750,14 @@
 // // test
 // newClients.concat(oldClients);
 // console.log(newClients);
+
+// const array = ['Mango', 'Kiwi', 'Apple', 'Lemon'];
+// console.table(array);
+
+// array[1] = 'Green';
+
+// console.table(array);
+
+// const numbers1 = [1, 2, 3];
+// const numbers2 = [1, 2, 3];
+// console.log(numbers1 === numbers2);
