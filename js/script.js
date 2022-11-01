@@ -792,5 +792,40 @@
 //   console.log(value);
 //   total += value;
 // }
-
 // console.log('Total :', total);
+
+// // Example сумма чётное и нечётное
+// const numbers = [1, 6, 3, 767, 343, 23, 56, 343, 232, 455, 6763, 3452];
+// let totalEven = 0;
+// let totalOdd = 0;
+// let total = 0;
+
+// console.table(numbers);
+
+// for (const number of numbers) {
+//   if (number % 2 === 0) {
+//     console.log('Чётное: ', number);
+//     totalEven += number;
+//   } else {
+//     console.log('Нечётное: ', number);
+//     totalOdd += number;
+//   }
+// }
+
+// console.log(`Сумма чётных: `, totalEven);
+// console.log(`Сумма нечётных: `, totalOdd);
+
+// total = totalEven + totalOdd;
+
+// console.log('Total: ', total);
+
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //   const number = numbers[i];
+
+// //   if (number % 2 === 0) {
+// //     console.log(`Чётное: ${number}`);
+// //     total += number;
+// //   } else {
+// //     console.log(`Нечётное: ${number}`);
+// //   }
+// // }
