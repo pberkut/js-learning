@@ -1040,3 +1040,50 @@
 // }
 
 // console.log(biggestNumber);
+
+// // Task 2 - 22
+// const planets = ['Earth', 'Mars', 'Venus'];
+// planets.push('Jupiter');
+// planets.push('Saturn', 'Uranus', 'Neptune');
+// console.log(planets);
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+
+// console.log(createArrayOfNumbers(1, 3));
+// console.log(createArrayOfNumbers(14, 17));
+// console.log(createArrayOfNumbers(29, 34));
+// console.log(createArrayOfNumbers(3, 12));
+
+// // Task 2 - 23. Фильтрация массива чисел.
+// /*
+// Напиши функцию filterArray(numbers, value), которая принимает массив чисел (параметр numbers) и возвращает новый массив, в котором будут только те элементы массива numbers, которые больше чем значение параметра value (число).
+// */
+// function filterArray(numbers, value) {
+//   const result = [];
+
+//   for (const number of numbers) {
+//     // console.log(number);
+//     if (number > value) {
+//       // console.log(number);
+//       result.push(number);
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+// Task 2 - 24
