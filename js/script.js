@@ -959,3 +959,28 @@
 //   // Change code above this line
 // }
 // console.log(slugify('Arrays for begginers'));
+
+// // Task 2 - 16
+// function makeArray(firstArray, secondArray, maxLength) {
+//   const totalArray = firstArray.concat(secondArray);
+//   let result;
+
+//   if (totalArray.length >= maxLength) {
+//     result = totalArray.slice(0, maxLength);
+//     return result;
+//   }
+
+//   result = totalArray;
+
+//   return result;
+// }
+
+// console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3));
+// console.log(makeArray(['Mango', 'Poly', 'Houston'], ['Ajax', 'Chelsea'], 4));
+// console.log(makeArray(['Mango'], ['Ajax', 'Chelsea', 'Poly', 'Houston'], 3));
+// console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 2));
+// console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 4));
+// console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus', 'Venus'], 0));
+// console.log(makeArray([1, 2, 3, 4, 5], [1, 2, 3, 4, 5], 10));
+// console.log(makeArray([1, 2, 3, 4, 5], [1, 2, 3, 4, 5], 5));
+// console.log(makeArray([1, 2, 3, 4, 5], [1, 2, 3, 4, 5], 6));
