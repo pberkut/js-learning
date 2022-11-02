@@ -829,3 +829,47 @@
 // //     console.log(`Нечётное: ${number}`);
 // //   }
 // // }
+
+// Example
+// const numbers = [1, 6, 3, 8, 12, 15, 17, 20];
+// let total = 0;
+
+// for (const number of numbers) {
+//   if (number % 2 !== 0) {
+//     console.log('Эту итерацию нужно пропустить ', number);
+//     continue;
+//   }
+
+//   total += number;
+//   console.log('Чётное: ', number);
+// }
+
+// console.log('Total: ', total);
+
+// // Module 2. Task 1.
+// function checkAge(age) {
+//   if (age >= 18) {
+//     return 'You are an adult';
+//   }
+
+//   return 'You are a minor';
+// }
+
+// console.log(checkAge(18));
+// console.log(checkAge(10));
+// console.log(checkAge(20));
+// console.log(checkAge(15));
+
+// Example
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryiamyjam';
+
+  if (password === ADMIN_PASSWORD) {
+    return 'Welcome!';
+  }
+
+  return 'Acces denied, wrong password!';
+}
+
+console.log(checkPassword('pass'));
+console.log(checkPassword('jqueryiamyjam'));
