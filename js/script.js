@@ -924,3 +924,38 @@
 //   return arrayExtreme;
 // }
 // console.log(getExtremeElements([1, 2, 3, 4, 5]));
+
+// Task 2-10
+// function splitMessage(message, delimeter) {
+//   let words;
+//   words = message.split(delimeter);
+//   return words;
+// }
+
+// console.log(splitMessage('Mango hurries to the train', ' '));
+// console.log(splitMessage('Mango', ''));
+// console.log(splitMessage('best_for_week', '_'));
+
+// // Task 2-11
+// function calculateEngravingPrice(message, pricePerWord) {
+//   const wordsArray = message.split(' ');
+//   const total = wordsArray.length * pricePerWord;
+//   return total;
+// }
+// console.log(calculateEngravingPrice('JavaScript is in my blood', 10));
+// console.log(calculateEngravingPrice('JavaScript is in my blood', 20));
+// console.log(calculateEngravingPrice('Web-development is creative work', 40));
+// console.log(calculateEngravingPrice('Web-development is creative work', 20));
+
+// // Task 2 - 13
+// function slugify(title) {
+//   // Change code below this line
+//   const normalizeString = title.toLowerCase();
+//   console.log(normalizeString);
+//   const makeTitleSplite = normalizeString.split(' ');
+//   const makeTitleJoin = makeTitleSplite.join('-');
+
+//   return makeTitleJoin;
+//   // Change code above this line
+// }
+// console.log(slugify('Arrays for begginers'));
