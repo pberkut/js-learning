@@ -1086,4 +1086,23 @@
 // console.log(filterArray([12, 24, 8, 41, 76], 38));
 // console.log(filterArray([12, 24, 8, 41, 76], 20));
 
-// Task 2 - 24
+// // Task 2 - 25
+// function getCommonElements(array1, array2) {
+//   let result = [];
+
+//   for (const number of array1) {
+//     if (array2.includes(number)) {
+//       result.push(number);
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+// console.log();
+
+// Task 2 - 26
