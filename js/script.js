@@ -984,3 +984,59 @@
 // console.log(makeArray([1, 2, 3, 4, 5], [1, 2, 3, 4, 5], 10));
 // console.log(makeArray([1, 2, 3, 4, 5], [1, 2, 3, 4, 5], 5));
 // console.log(makeArray([1, 2, 3, 4, 5], [1, 2, 3, 4, 5], 6));
+
+// // Task 2 - 18
+// function calculateTotal(number) {
+//   let result = 0;
+
+//   for (let i = 1; i <= number; i += 1) {
+//     result += i;
+//   }
+
+//   return result;
+// }
+
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(3));
+// console.log(calculateTotal(7));
+// console.log(calculateTotal(18));
+// console.log(calculateTotal(24));
+// console.log(calculateTotal(5000));
+
+// // Task 2 - 20
+// function calculateTotalPrice(order) {
+//   let total = 0;
+
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+// Task 2 - 21 Найти в массиве самое большое по длине слово
+// const string = 'The quick brown fox jumped over the lazy dog';
+// const words = string.split(' ');
+// let biggestNumber = '';
+// console.log(words);
+
+// Вариант № 1
+// for (let i = 0; i < words.length; i += 1) {
+//   console.log(words[i].length);
+//   if (words[i].length > biggestNumber.length) {
+//     biggestNumber = words[i];
+//   }
+// }
+
+// // Вариант № 2
+// for (const word of words) {
+//   console.log(word.length);
+//   if (word.length > biggestNumber.length) {
+//     biggestNumber = word;
+//   }
+// }
+
+// console.log(biggestNumber);
