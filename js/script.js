@@ -1086,6 +1086,23 @@
 // console.log(filterArray([12, 24, 8, 41, 76], 38));
 // console.log(filterArray([12, 24, 8, 41, 76], 20));
 
+//  Example. Фильтрация чисел 2.0
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     const number = numbers[i];
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
 // // Task 2 - 25
 // function getCommonElements(array1, array2) {
 //   let result = [];
