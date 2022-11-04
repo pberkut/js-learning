@@ -1122,4 +1122,22 @@
 // console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 // console.log();
 
-// Task 2 - 26
+// // Task 2 - 26
+// function getEvenNumbers(start, end) {
+//   const result = [];
+
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       result.push(i);
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(getEvenNumbers(2, 5));
+// console.log(getEvenNumbers(3, 11));
+// console.log(getEvenNumbers(6, 12));
+// console.log(getEvenNumbers(8, 8));
+// console.log(getEvenNumbers(7, 7));
+// console.log(getEvenNumbers(12, 28));
