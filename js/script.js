@@ -1141,3 +1141,40 @@
 // console.log(getEvenNumbers(8, 8));
 // console.log(getEvenNumbers(7, 7));
 // console.log(getEvenNumbers(12, 28));
+
+// Task 2 - 30
+// function fn() {
+//   for (let i = 0; i <= 5; i += 1) {
+//     console.log(i);
+
+//     if (i === 3) {
+//       console.log('Нашли число 3, делаем возврат, прерывая цикл и функцию');
+//       return i;
+//     }
+//   }
+
+//   // Этот console.log не выполнится
+//   console.log('Лог после цикла в теле функции');
+// }
+
+// const result = fn();
+// console.log('Лог после выхода из функции');
+// console.log(`Результат выполнения функции ${result}`);
+
+// // Task решение задачи
+// function includes(array, value) {
+//   let result = false;
+//   for (const val of array) {
+//     if (val === value) {
+//       return (result = true);
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Jupiter'));
+// console.log(includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Uranus'));
+// console.log(includes(['apple', 'plum', 'pear', 'orange'], 'plum'));
+// console.log(includes(['apple', 'plum', 'pear', 'orange'], 'kiwi'));
