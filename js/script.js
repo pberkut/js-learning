@@ -1203,3 +1203,61 @@
 
 // result = multiply(17, 6, 25);
 // console.log(result); // 2550
+
+// Learning function
+// div();
+
+// const add = function () {
+//   console.log('Вызов функции add');
+// };
+
+// function div() {
+//   console.log('Вызов функции div');
+// }
+
+// add();
+// add();
+
+// const add = function (a = 5, b = 3) {
+//   console.log('Вызов функциии add');
+//   console.log(a);
+//   console.log(b);
+
+//   const c = a + b;
+//   console.log('a + b =', c);
+
+//   return c;
+// };
+
+// const r1 = add(1, 2);
+// // add();
+// // add(1);
+
+// console.log(r1);
+
+// Example
+// const add = function (x, y) {
+//   console.log(`x = ${x}`);
+//   console.log(`y = ${y}`);
+//   return x + y;
+// };
+
+// const result = add(1, 2);
+// console.log(result);
+
+// Example base function
+// const multiply = function (x, y) {
+//   return x * y;
+// };
+// const result1 = multiply(2, 5);
+// console.log(result1);
+
+const fn = function () {
+  console.log(1);
+  console.log(2);
+  return;
+
+  console.log(3);
+};
+
+console.log(fn());
