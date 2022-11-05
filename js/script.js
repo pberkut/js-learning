@@ -1252,12 +1252,45 @@
 // const result1 = multiply(2, 5);
 // console.log(result1);
 
-const fn = function () {
-  console.log(1);
-  console.log(2);
-  return;
+// example
+// const fn = function () {
+//   console.log(1);
+//   console.log(2);
+//   return;
 
-  console.log(3);
-};
+//   console.log(3);
+// };
 
-console.log(fn());
+// console.log(fn());
+
+// // Example stack tracer
+// const fnA = function () {
+//   console.log('Вызов функции fnA');
+//   fnB();
+// };
+
+// const fnB = function () {
+//   console.log('Вызов функции fnB');
+//   fnC();
+// };
+
+// const fnC = function () {
+//   console.log('Вызов функции fnC');
+//   console.log(value);
+// };
+
+// fnA();
+// // fnB();
+// // fnC();
+
+// // Example function
+// const logins = ['poly', 'mango', 'list', 'red'];
+
+// const findLogin = function (allLogins, loginToFind) {
+//   return allLogins.includes(loginToFind) ? `Login find - ${loginToFind}` : `Login unfind - ${loginToFind}`;
+// };
+
+// console.log(findLogin(logins, 'poly'));
+// console.log(findLogin(logins, 'poly1'));
+// console.log(findLogin(logins, 'poly2'));
+// console.log(findLogin(logins, 'red'));
