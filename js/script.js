@@ -1341,18 +1341,58 @@
 // console.log(add(1, 2, 3, 4, 5, 6, 7));
 // console.log(add(1, 2, 3, 4, 5, 6, 7, 8, 9));
 
-// // Example filterNumbers Выбираем цифры из массива
+// Example filterNumbers Выбираем цифры из массива
 // const filterNumbers = function (array, ...args) {
 //   console.log('array: ', array);
 //   console.log('args: ', args);
+//   const uniqueElements = [];
 
 //   for (const element of array) {
 //     if (args.includes(element)) {
+//       uniqueElements.push(element);
 //       console.log(`${element} Эта цифра есть`);
 //     }
 //   }
+
+//   return uniqueElements;
 // };
 
 // console.log(filterNumbers([1, 2, 3, 4, 5], 4, 56, 3, 2));
 // console.log(filterNumbers([1, 2, 3, 4, 5, 21, 21], 3, 56, 5, 2));
 // console.log(filterNumbers([1, 2, 3, 4, 5, 21, 21], 3, 56, 5, 2, 1, 43));
+
+// // Example проверка на число, если прохидит проверку идёт сложение
+// function add(a, b) {
+//   if (typeof a !== 'number' || typeof b !== 'number') {
+//     return 'One of operands is not a number';
+//   }
+
+//   return a + b;
+// }
+
+// console.log(add(1, '2'));
+// console.log(add(1, 2));
+
+// const total = add(10, 10) + add(5, 5);
+// console.log(total);
+
+// // Example call stack
+// console.log('1 start');
+
+// function bar() {
+//   console.log('3 bar');
+// }
+
+// function baz() {
+//   console.log('4 baz');
+// }
+
+// function foo() {
+//   console.log('2 foo');
+//   bar();
+//   baz();
+// }
+
+// foo();
+
+// console.log('5 end');
