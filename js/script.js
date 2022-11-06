@@ -1396,3 +1396,30 @@
 // foo();
 
 // console.log('5 end');
+
+// Kahoot
+// console.log(Number(null)); // Приводится к 0
+// console.log('12' >= '12'); // string сравнивается по символьно по юникоду
+// console.log(10 >= '7'); // Приводится к числу
+// console.log(NaN === NaN); // NaN ни кому не равно, даже самому себе
+// console.log('4' == [4]); // Приводится к числу
+// console.log(Boolean(-5)); // есть шесть значений которые приводятся к false
+// console.log(Boolean(0)); //false
+// console.log(Boolean('0')); // true ... потому что string приводится к true
+// console.log(3 > 2 > 1); //false ... (3>2) > 1... 3>2 = true - приводится к 1. 1>1 - false
+// console.log('5' + 5); //конкатинация
+// console.log('10' > 5); // true ... приводится к числу
+// console.log(Number('0')); // 0 ... приводится к числу
+// console.log('5' - 5); // 0 ...  приводится к числу 5 - 5 = 0
+// console.log('10' == 10); // true ... в нестрогой не равности приводится к числу
+// console.log(Number(false)); // 0 ... false приводится 0
+// console.log("5" - true) // 4 ... string 5 приводится к числу 5, true приводится 1. 5 - 4 = 1
+// console.log('Їжак' >= 'їжак'); // false ... сравнение идёт по юникоду в заглавной букве юникод меньше чем прописной
+// console.log(true && 0 && 'їжачок'); // 0
+// console.log('їжак' || 'їжачок'); // "їжак"
+// console.log((true && 0 && 2) > 0); // 0
+// console.log('223' > '2000');
+// console.log('2' > '12');
+
+// console.log(Number('12px')); // NaN
+// console.log(Number.parseInt('12px')); // 12
