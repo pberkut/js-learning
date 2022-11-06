@@ -1294,3 +1294,65 @@
 // console.log(findLogin(logins, 'poly1'));
 // console.log(findLogin(logins, 'poly2'));
 // console.log(findLogin(logins, 'red'));
+
+// // Example old school arguments to array.
+// const fn = function () {
+//   console.log(arguments);
+
+//   const args = Array.from(arguments);
+
+//   console.log(args);
+// };
+
+// new method
+// const fn = function (...args) {
+//   console.log(args);
+// };
+
+// fn(1, 2, 3);
+// fn(1, 2, 3, 4, 5);
+// fn(1, 2, 3.4, 5, 6, 7);
+
+// // Example
+// const fn = function (a, b, c, ...args) {
+//   console.log(a, b, c);
+//   console.log(args);
+// };
+
+// fn('Hello', 1, 2, 3);
+// fn('Aloha', 1, 2, 3, 4, 5);
+// fn('Hi', 1, 2, 3.4, 5, 6, 7);
+
+// // Example add rest
+// const add = function (...args) {
+//   console.log(args);
+
+//   let total = 0;
+
+//   for (const arg of args) {
+//     // console.log(arg);
+//     total += arg;
+//   }
+
+//   return total;
+// };
+
+// console.log(add(1, 2, 3, 4));
+// console.log(add(1, 2, 3, 4, 5, 6, 7));
+// console.log(add(1, 2, 3, 4, 5, 6, 7, 8, 9));
+
+// // Example filterNumbers Выбираем цифры из массива
+// const filterNumbers = function (array, ...args) {
+//   console.log('array: ', array);
+//   console.log('args: ', args);
+
+//   for (const element of array) {
+//     if (args.includes(element)) {
+//       console.log(`${element} Эта цифра есть`);
+//     }
+//   }
+// };
+
+// console.log(filterNumbers([1, 2, 3, 4, 5], 4, 56, 3, 2));
+// console.log(filterNumbers([1, 2, 3, 4, 5, 21, 21], 3, 56, 5, 2));
+// console.log(filterNumbers([1, 2, 3, 4, 5, 21, 21], 3, 56, 5, 2, 1, 43));
