@@ -1,4 +1,4 @@
-//  object
+//! Module 3 - 1  object
 
 // const book = {
 //   title: 'The Last Kingdom',
@@ -46,7 +46,7 @@
 // console.log(book.originalLanguage);
 // console.log(book.translations);
 
-//! -----------
+//* -----------
 // const user = {
 //   name: 'Jacques Glike',
 //   tag: 'jgluke',
@@ -81,7 +81,7 @@
 // console.table(user);
 //  End ----------------
 
-// Exapmle
+//* Exapmle
 // const name = 'Генри Сибола';
 // const age = 25;
 
@@ -130,7 +130,7 @@
 // bookShelf.getBooks();
 // bookShelf.addBook('Новая книга');
 
-//Example this
+//*Example this
 // const bookShelf = {
 //   books: ['The Last Kingdom'],
 //   getBooks() {
@@ -140,7 +140,7 @@
 
 // bookShelf.getBooks();
 
-//Example
+//*Example
 // const bookShelf = {
 //   books: ['The Last Kingdom'],
 //   getBooks() {
@@ -162,7 +162,7 @@
 // bookShelf.removeBook('The Mist');
 // console.log(bookShelf.getBooks());
 
-// Example for ... in
+//* Example for ... in
 // const book = {
 //   title: 'The last Kingdom',
 //   author: 'Bernard Corwell',
@@ -175,7 +175,7 @@
 //   console.log(book[key]);
 // }
 
-// // Example hasOwnProperty()
+//* Example hasOwnProperty()
 // const animal = {
 //   legs: 4,
 // };
@@ -187,15 +187,15 @@
 // console.log(dog.name);
 // console.log(dog.legs);
 
-// // Возвращает true для всех
+//* Возвращает true для всех
 // console.log('name' in dog); // true
 // console.log('legs' in dog); // true
 
-// // Возвращает true только для собственных свойств
+//* Возвращает true только для собственных свойств
 // console.log(dog.hasOwnProperty('name')); // true
 // console.log(dog.hasOwnProperty('legs')); // false
 
-// Example hasOwnProperty for ... in
+//* Example hasOwnProperty for ... in
 // const book = {
 //   title: 'The Last Kingdom',
 //   author: 'Bernard Corwell',
@@ -221,7 +221,7 @@
 //   console.log(book[key]);
 // }
 
-// // Addition object values us Object.values() for ... of
+//* Addition object values us Object.values() for ... of
 // const goods = {
 //   apple: 6,
 //   grapes: 3,
@@ -240,7 +240,7 @@
 
 // console.log(total);
 
-// Exapmle Object.entries()
+//* Exapmle Object.entries()
 // const book = {
 //   title: 'The Last Kingdom',
 //   author: 'Bernard Cornwell',
@@ -256,7 +256,7 @@
 // const entries = Object.entries(book);
 // console.log(entries);
 
-//! Example Массив объектов
+//* Example Массив объектов
 // const books = [
 //   {
 //     title: 'The Last Kingdom',
