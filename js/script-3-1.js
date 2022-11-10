@@ -793,3 +793,79 @@
 // const x = Object.assign({}, a);
 
 //! Деструктуризация
+// * Плоский объект
+// const a = {
+//   x: 5,
+//   y: 10,
+//   z: 20,
+//   //   m: 50,
+// };
+
+// const { x, y: newValue = 0, z, m = 100 } = a; // Значение по умолчанию если несуществует свойства с именем m. если в объекте есть перменная m, тогда приоритет сзначение свойства с объекта.
+
+// console.log(a.x, a.y, a.z);
+// console.log(x, newValue, z, m);
+
+// * Объект с вложенными объектами
+// const a = {
+//   x: 1,
+//   y: 2,
+//   b: {
+//     z: 3,
+//     p: 4,
+//   },
+// };
+
+// const {
+//   x,
+//   y,
+//   b: { z, p },
+// } = a;
+
+// // const { z, p } = b;
+
+// console.log(x, y);
+// console.log(z, p);
+
+// * Example
+// const author = {
+//   Petro: 4,
+//   Pavlo: 6,
+//   Denis: 5,
+//   Alina: 9,
+// };
+
+// const entries = Object.entries(author);
+
+// // console.table(entries);
+// console.log(entries);
+
+// for (const entry of entries) {
+//   console.log(entry);
+//   console.log(entry[0]);
+//   console.log(entry[1]);
+// }
+
+//* Task 3 - 30
+// function makeTask(data) {
+//   const completed = false;
+//   const category = 'General';
+//   const priority = 'Normal';
+//   // Change code below this line
+//   const defaultSettingsTask = {
+//     category,
+//     priority,
+//     completed,
+//   };
+
+//   const newTask = { ...defaultSettingsTask, ...data };
+
+//   return newTask;
+//   // Change code above this line
+// }
+
+// console.log(makeTask({}));
+// console.log(makeTask({ category: 'Homemade', priority: 'Low', text: 'Take out the trash' }));
+// console.log(makeTask({ category: 'Finance', text: 'Take interest' }));
+// console.log(makeTask({ priority: 'Low', text: 'Choose shampoo' }));
+// console.log(makeTask({ text: 'Buy bread' }));
