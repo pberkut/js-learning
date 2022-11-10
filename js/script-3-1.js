@@ -341,4 +341,166 @@
 // console.log(keys);
 // console.log(values);
 
-//
+//* Task 3 - 11
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: 'apt',
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = 'Spacious apartment in the city center';
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   if (apartment.hasOwnProperty(key)) {
+//     keys.push(key);
+//     values.push(apartment[key]);
+//   }
+// }
+
+// console.log(apartment);
+// console.log(keys);
+// console.log(values);
+// console.log(apartment.service); // Не собственное свойство
+
+//* Task 3 -12
+// function countProps(object) {
+//   let propCount = 0;
+
+//   for (const key in object) {
+//     if (object.hasOwnProperty(key)) {
+//       propCount += 1;
+//     }
+//   }
+//   return propCount;
+// }
+
+// console.log(countProps({ a: 1, b: 2, c: 3 }));
+// console.log(countProps({ name: 'Mango', age: 2 }));
+
+//* Task 3 - 13
+// const apartment = {
+//   descr: 'Spacious apartment in the city center',
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// const keys = Object.keys(apartment);
+
+// for (const key of keys) {
+//   values.push(apartment[key]);
+// }
+
+// console.log(values);
+
+// * Task 3 - 17
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+// console.table(colors);
+
+// console.log(colors[0]);
+// console.log(colors[1]);
+// console.log(colors[2]);
+// console.log(colors[3]);
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (const color of colors) {
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
+
+// console.log(hexColors);
+// console.log(rgbColors);
+
+// * Task 3 - 18
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       return product.price;
+//     }
+//   }
+
+//   return null;
+// }
+
+// console.log(getProductPrice('Droid'));
+// console.log(getProductPrice('Droid'));
+// console.log(getProductPrice('Radar'));
+// console.log(getProductPrice('Radar'));
+// console.log(getProductPrice('Apple'));
+
+// * Task 3 - 19
+/*
+1. Создаём пустой массив для значений объектов propertyValues.
+2. Перебиарем массив объектов циклом for of.
+3. Создаем переменную массива ключей объекта Object.keys().
+4. Создаём условие если в массиве ключей есть совпадение (include()) с нашим именем propName делаем push в пустой массив.
+5. Проходим весь цикл.
+6. Делаем return после цикла перебора.
+*/
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   const propertyValues = [];
+//   for (const product of products) {
+//     const keys = Object.keys(product);
+
+//     if (keys.includes(propName)) {
+//       propertyValues.push(product[propName]);
+//     }
+//   }
+//   return propertyValues;
+//   // Change code above this line
+// }
+
+// console.log(getAllPropValues('name'));
+// console.log(getAllPropValues('price'));
+// console.log(getAllPropValues('quantity'));
+
+//* Task 3 - 20
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   let totalPrice = 0;
+
+//   for (const product of products) {
+//     const valuesProp = Object.values(product);
+
+//     if (valuesProp.includes(productName)) {
+//       totalPrice = product.price * product.quantity;
+
+//       return totalPrice;
+//     }
+//   }
+//   return 0;
+// }
+
+// console.log(calculateTotalPrice('Blaster'));
+// console.log(calculateTotalPrice('Radar'));
+// console.log(calculateTotalPrice('Grip'));
+// console.log(calculateTotalPrice('Scanner'));
