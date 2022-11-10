@@ -683,3 +683,113 @@
 // console.log(userLikes);
 
 // * Example Деструктуризация массивов
+// const rgb = [200, 255, 100];
+// const [red, green, blue] = rgb;
+
+// console.log(`R:${red}, G:${green}, B:${blue}`);
+
+// Присовение переменной после её объявления
+// const rgb = [200, 255, 100];
+// let red, green, blue;
+
+// [red, green, blue] = rgb;
+
+// console.log(`R:${red}, G:${green}, B:${blue}`);
+
+// Присвоение переменноу по умолчанию
+// const rgb = [200, 100, 255];
+// const [red, green, blue, alfa = 0.3] = rgb;
+
+// console.log(`R:${red},G:${green},B:${blue},Alfa:${alfa}`);
+
+// Example берём только одну переменную, остальные записываются в массив
+// const rgb = [200, 255, 100];
+// const [red, ...colors] = rgb;
+
+// console.log(red);
+// console.log(colors);
+
+// Example пропускаем не сколько значений
+// const rgb = [200, 100, 255];
+// const [, , blue] = rgb;
+
+// console.log(`Blue: ${blue}`);
+// console.log(rgb);
+
+//* Example Паттерн "Объект параметров"
+// function doStuffWithBook(book) {
+//   const { title, numberOfPages, downloads, rating, isPublic } = book;
+//   console.log(title);
+//   console.log(numberOfPages);
+// }
+
+// function doStuffWithBook1({ title, numberOfPages, downloads, rating, isPublic }) {
+//   nsole.log(title);
+//   console.log(numberOfPages);
+// }
+
+//* Example SPREAD
+// const numbers1 = [1, 2, 3].concat([4, 5, 6], [7, 8, 9]);
+// const numbers2 = [1, 2, 3, ...[4, 5, 6], ...[7, 8, 9]];
+
+// console.log(numbers1);
+// console.log(numbers2);
+
+//*! В примитивах делается копия, в объектах указывается ссылка
+// const a = [1, 2, 3];
+// const b = [...a]; // произойдёт распыление и копирование примитивных объектов в новый массив b из массива a.
+// const c = a; // скопируется адрес (pointer) массива a.
+// const d = [a]; //Массив a вставиться в 0 индекс нового массива d.
+
+// console.log(a === b); // false. Два массива сложный тип данных хранятся в разных ячейках
+// console.log(a[0] === b[0]); // true .  Сравниваются Number примитивный тип данных.
+// console.log(`a[0]: ${a[0]}`);
+// console.log(`b[0]: ${b[0]}`);
+
+// console.log('a: ', a);
+// console.log('b: ', b);
+// console.log('c: ', c);
+// console.log('d: ', d);
+
+// сравниваю объекты в массиве
+// const a = [{ a: 1 }, { b: 1 }, { c: 1 }];
+// const b = [...a]; // Не происходит копирование как при примитивных типах данных, а вставляется ссылка-адрес(pointer) на объект из массива a.
+// const c = [a];
+
+// console.log(a === b); // false .  Массивы разные, в разных ячейках памяти.
+// console.log(a[0] === b[0]); // true . Сравниваются адреса объектов в массиве под индексом 0. В массиве a и b лежит ссылка-адрес (pointer) на один и тот же объект.
+// console.log({} === {}); // false. Объект не равен объекту. сложный тип данных. Разные адреса в ячеках памяти.
+
+// console.log('a: ', a);
+// console.log('b: ', b);
+// console.log('c: ', c);
+
+// a[0].a = 1000;
+// console.log('a: ', a);
+// console.log('b: ', b);
+
+//*! Распыление объектов spread И b Object.prototype.assign()
+// const a = { x: 1, y: 2, g: { hello: 'world', a: 3 } };
+// const b = { x: 0, z: 3 };
+
+// const c = Object.assign({}, a, b); // Распыление объектов.
+
+// const c = { ...a, ...b };
+
+// console.log(c);
+// console.log(...'Hello world');
+// console.log(...[1, 'hello', []]);
+
+// Example
+// const a = {
+//   a: 1,
+//   b: 2,
+//   c: {
+//     d: 3,
+//     e: 4,
+//   },
+// };
+
+// const x = Object.assign({}, a);
+
+//! Деструктуризация
