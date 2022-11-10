@@ -504,3 +504,182 @@
 // console.log(calculateTotalPrice('Radar'));
 // console.log(calculateTotalPrice('Grip'));
 // console.log(calculateTotalPrice('Scanner'));
+
+// * Example
+// const temps = [14, -4, 25, 8, 11];
+
+// console.log(temps);
+// console.log(Math.max(temps));
+
+// console.log(...temps);
+// console.log(Math.max(...temps));
+
+// const copyOfTemps = [...temps]; // Создаёт точную копию нового массива
+// console.log(copyOfTemps);
+// console.log(temps === copyOfTemps);
+
+//* Example
+// const lastWeekTemps = [14, 25, 11];
+// const currentWeekTemps = [23, 17, 18];
+// const allTemps = [...lastWeekTemps, ...currentWeekTemps];
+
+// console.log(allTemps);
+
+// * Example
+// const first = { propA: 5, propB: 10 };
+// const second = { propC: 15 };
+// const third = { ...first, ...second };
+
+// console.log(third);
+
+// * Example перезапись свойсвт
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15, propD: 20 };
+
+// const third = { ...first, ...second };
+// console.log(third);
+
+// const fourth = { ...second, ...first };
+// console.log(fourth);
+
+// * Example
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15 };
+
+// const third = { propB: 20, ...first, ...second };
+// console.log(third);
+
+// const fourth = { ...first, ...second, propB: 20 };
+// console.log(fourth); // { propA: 5, propB: 20, propC: 15 }
+
+// const fifth = { ...first, propB: 20, ...second };
+// console.log(fifth); // { propA: 5, propB: 20, propC: 15 }
+
+// * Example
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//   console.log(firstNumber); // Значение первого аргумента
+//   console.log(secondNumber); // Значение второго аргумента
+//   console.log(otherArgs); // Массив остальных аргументов
+// }
+
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+
+//* Example
+// const book = {
+//   title: 'The Last Kingdom',
+//   author: 'Bernard Cornwell',
+//   genres: ['historical prose', 'adventure'],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+
+// // Деструктуризация
+// const { title, author, isPublic, rating, coverImage } = book;
+// console.log(coverImage);
+// console.log(title);
+// console.log(book.title);
+
+// // const accessType = book.isPublic ? 'публичном' : 'закрытом';
+// // const message = `Книга ${book.title} автора ${book.author} с рейтингом ${book.rating} находится в ${accessType} доступе.`;
+
+// const accessType = isPublic ? 'публичном' : 'закрытом';
+// const message = `Книга ${title} автора ${author} с рейтингом ${rating} находится в ${accessType} доступе.`;
+
+// console.log(message);
+
+//* Example
+// const book = {
+//   title: 'The Last Kingdom',
+//   author: 'Bernard Cornwell',
+// };
+
+// const { title, coverImage = 'https://via.placeholder.com/640/480', author } = book;
+
+// console.log(title);
+// console.log(author);
+// console.log(coverImage);
+
+//* Example
+// const firstBook = {
+//   title: 'The Last Kingdom',
+//   CoverImage: 'https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg',
+// };
+
+// const { title: firstTitle, coverImage: firstCoverImage = 'https://via.placeholder.com/640/480' } = firstBook;
+
+// console.log(firstTitle);
+// console.log(firstCoverImage);
+
+// const secondBook = {
+//   title: 'Сон смешного человека',
+// };
+
+// const { title: secondTitle, coverImage: secondCoverImage = 'https://via.placeholder.com/640/480' } = secondBook;
+
+// console.log(secondTitle);
+// console.log(secondCoverImage);
+
+// * Example
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'На берегу спокойных вод',
+//     author: 'Роберт Шекли',
+//     rating: 8.51,
+//   },
+// ];
+
+// for (const book of books) {
+//   console.log(book.title);
+//   console.log(book.author);
+//   console.log(book.rating);
+// }
+
+// console.log('next');
+
+// for (const book of books) {
+//   const { title, author, rating } = book;
+
+//   console.log(title);
+//   console.log(author);
+//   console.log(rating);
+// }
+
+// console.log('next');
+
+// for (const { title, author, rating } of books) {
+//   console.log(title);
+//   console.log(author);
+//   console.log(rating);
+// }
+
+// * Example глубокая деструктуризация
+// const user = {
+//   name: 'Jacques Gluke',
+//   tag: 'jgluke',
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+
+// const {
+//   name,
+//   tag,
+//   stats: { followers, views: userViews, likes: userLikes = 0 },
+// } = user;
+
+// console.log(name);
+// console.log(tag);
+// console.log(followers);
+// console.log(userViews);
+// console.log(userLikes);
+
+// * Example Деструктуризация массивов
