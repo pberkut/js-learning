@@ -1341,7 +1341,7 @@
 // console.log(add(1, 2, 3, 4, 5, 6, 7));
 // console.log(add(1, 2, 3, 4, 5, 6, 7, 8, 9));
 
-// Example filterNumbers Выбираем цифры из массива
+//* Example filterNumbers Выбираем цифры из массива
 // const filterNumbers = function (array, ...args) {
 //   console.log('array: ', array);
 //   console.log('args: ', args);

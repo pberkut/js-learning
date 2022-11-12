@@ -869,3 +869,137 @@
 // console.log(makeTask({ category: 'Finance', text: 'Take interest' }));
 // console.log(makeTask({ priority: 'Low', text: 'Choose shampoo' }));
 // console.log(makeTask({ text: 'Buy bread' }));
+
+// * Task 3 - 31
+// Change code below this line
+// function add(...args) {
+//   let total = 0;
+
+// // Example 1
+//   console.log(args);
+//   for (let i = 0; i < args.length; i += 1) {
+//     console.log(i);
+//     total += args[i];
+//   }
+
+// // Exampl 2
+//   for (const arg of args) {
+//     total += arg;
+//   }
+//   return total;
+// Change code above this line
+// }
+
+// console.log(add(2, 3));
+// console.log(add(2, 3, 3, 4));
+// console.log(add(2, 3, 10));
+// console.log(add(2, 3, 30, 40));
+
+// * Task 3 - 32
+// Change code below this line
+// function addOverNum(a, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (a < arg) {
+//       total += arg;
+//     }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+
+// console.log(addOverNum(50, 15, 27));
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// console.log(addOverNum(15, 32, 6, 13, 19, 8));
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+
+// * Task 3 - 34
+// Change code below this line
+// function findMatches(array, ...args) {
+//   const matches = []; // Don't change this line
+
+//   for (const element of array) {
+//     if (args.includes(element)) {
+//       matches.push(element);
+//     }
+//   }
+
+//   // Change code above this line
+//   return matches;
+// }
+
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+// console.log(findMatches([63, 11, 8, 29], 4, 7, 16));
+
+// * Task 3 - 35
+// const bookShelf = {
+//   books: ['Последнее королевство'],
+//   getBooks() {
+//     console.log(this);
+//   },
+// };
+
+// // Перед точкой стоит объект bookShelf,
+// // поэтому при вызове метода, this будет хранить ссылку на него.
+// bookShelf.getBooks(); // {books: ["Последнее королевство"], getBooks: f}
+
+// * Task 3 - 41
+const atTheOldToad = {
+  potions: [
+    { name: 'Speed potion', price: 460 },
+    { name: 'Dragon breath', price: 780 },
+    { name: 'Stone skin', price: 520 },
+  ],
+  // Change code below this line
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(newPotion) {
+    for (const potion of this.potions) {
+      if (potion.name.includes(newPotion.name)) {
+        return `Error! Potion ${newPotion.name} is already in your inventory!`;
+      }
+    }
+
+    this.potions.push(newPotion);
+  },
+  removePotion(potionName) {
+    for (const potion of this.potions) {
+      //   const potionIndex = this.potions.name[i].indexOf(potionName);
+      console.log(potion);
+      //   console.log(!potion.name.includes(potionName));
+
+      if (!potion.name.includes(potionName)) {
+        // console.log(potion.name.includes(potionName));
+        return `Potion ${potionName} is not in inventory!`;
+      }
+      //   this.potions.splice(potionIndex, 1);
+    }
+  },
+  updatePotionName(oldName, newName) {
+    const potionIndex = this.potions.indexOf(oldName);
+
+    if (potionIndex === -1) {
+      return `Potion ${oldName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1, newName);
+  },
+  // Change code above this line
+};
+
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.addPotion({ name: 'Invisibility', price: 620 }));
+// console.log(atTheOldToad.addPotion({ name: 'Power potion', price: 270 }));
+// console.log(atTheOldToad.addPotion({ name: 'Dragon breath', price: 700 }));
+// console.log(atTheOldToad.addPotion({ name: 'Stone skin', price: 240 }));
+// console.log(atTheOldToad.addPotion({ name: 'Dragon breath', price: 700 }));
+// console.log(atTheOldToad.addPotion({ name: 'Stone skin', price: 240 }));
+console.log(atTheOldToad.removePotion('Dragon breath'));
+// console.log(atTheOldToad.removePotion('Speed potion'));
+// console.log(atTheOldToad.updatePotionName('Dragon breath', 'Polymorth'));
+// console.log(atTheOldToad.updatePotionName('Stone skin', 'Invulnerability potion'));
