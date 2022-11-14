@@ -174,3 +174,89 @@
 // };
 
 // numbers.forEach(logMessage);
+
+// * Example
+// const doMath = function (a, b, callback) {
+//   const result = callback(a, b);
+//   console.log(result);
+// };
+
+// //Add
+// const add = function (x, y) {
+//   return x + y;
+// };
+
+// // Subtract
+// const sub = function (x, y) {
+//   return x - y;
+// };
+
+// // Multiply
+// const mul = function (x, y) {
+//   return x * y;
+// };
+
+// // Divide
+// const div = function (x, y) {
+//   return x / y;
+// };
+
+// doMath(1, 2, add);
+
+// doMath(3, 1, mul);
+
+// doMath(3, 1, function (x, y) {
+//   return x - y;
+// });
+
+// doMath(6, 2, div);
+
+//* Example
+// const buttonRef = document.querySelector('.button');
+
+// // console.log(buttonRef);
+
+// const handleBtnClick = function () {
+//   console.log('Клик по кнопке' + Date.now());
+// };
+
+// // buttonRef.addEventListener('click', handleBtnClick);
+// buttonRef.addEventListener('click', function () {
+//   console.log('Клик по кнопке' + Date.now());
+// });
+
+// * Example
+// const callback = function () {
+//   console.log('Вызов функцмм callBack после таймаут 2000 мс');
+// };
+
+// console.log('Код перед таймаут');
+
+// setTimeout(callback, 2000);
+
+// console.log('Код после таймаут');
+
+//*! Замыкание функций. Closure function
+// const makeSheff = function (name) {
+//   const makeDish = function (dish) {
+//     console.log(`${name} готовит ${dish}`);
+//   };
+
+//   return makeDish;
+// };
+
+// const mango = makeSheff('Mango');
+
+// console.dir(mango);
+
+// mango('котлеты');
+// mango('капуста');
+
+// const poly = makeSheff('Poly');
+
+// console.dir(poly);
+
+// poly('чебурек');
+// poly('пельмени');
+
+//! Стрелочные функции
