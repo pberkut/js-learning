@@ -260,3 +260,30 @@
 // poly('пельмени');
 
 //! Стрелочные функции
+const fnA = function (a, b, c) {
+  console.log(a, b, c);
+  return a + b + c;
+};
+
+const fnB = (a, b, c) => {
+  return a + b + c;
+};
+
+const fnC = (a, b, c) => a + b + c;
+
+const fnD = a => a + 5;
+
+const fnE = () => 50;
+
+const fnX = () => [1, 2, 3, 4, 5];
+
+const fnF = () => ({ value: 100 });
+
+// fnA(2, 3, 3);
+console.log(fnA(2, 3, 3));
+console.log(fnB(5, 5, 5));
+console.log(fnC(2, 2, 2));
+console.log(fnD(5));
+console.log(fnE());
+console.log(fnF());
+console.log(fnX());
