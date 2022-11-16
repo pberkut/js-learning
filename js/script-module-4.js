@@ -260,30 +260,80 @@
 // poly('пельмени');
 
 //! Стрелочные функции
-const fnA = function (a, b, c) {
-  console.log(a, b, c);
-  return a + b + c;
-};
+// const fnA = function (a, b, c) {
+//   console.log(a, b, c);
+//   return a + b + c;
+// };
 
-const fnB = (a, b, c) => {
-  return a + b + c;
-};
+// const fnB = (a, b, c) => {
+//   return a + b + c;
+// };
 
-const fnC = (a, b, c) => a + b + c;
+// const fnC = (a, b, c) => a + b + c;
 
-const fnD = a => a + 5;
+// const fnD = a => a + 5;
 
-const fnE = () => 50;
+// const fnE = () => 50;
 
-const fnX = () => [1, 2, 3, 4, 5];
+// const fnX = () => [1, 2, 3, 4, 5];
 
-const fnF = () => ({ value: 100 });
+// const fnF = () => ({ value: 100 });
 
-// fnA(2, 3, 3);
-console.log(fnA(2, 3, 3));
-console.log(fnB(5, 5, 5));
-console.log(fnC(2, 2, 2));
-console.log(fnD(5));
-console.log(fnE());
-console.log(fnF());
-console.log(fnX());
+// // fnA(2, 3, 3);
+// console.log(fnA(2, 3, 3));
+// console.log(fnB(5, 5, 5));
+// console.log(fnC(2, 2, 2));
+// console.log(fnD(5));
+// console.log(fnE());
+// console.log(fnF());
+// console.log(fnX());
+
+// * Task 4 - 3
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza('Royal Grand', function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+
+// makePizza('Ultracheese', function eatPizza(pizzaName) {
+//   console.log(`Eating pizza ${pizzaName}`);
+// });
+
+// * Task 4 - 4
+// const pizzaPalace = {
+//   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+//   order(pizzaName, onSuccess, onError) {
+//     if (this.pizzas.includes(pizzaName)) {
+//       return onSuccess(pizzaName);
+//     }
+//     return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order('Smoked', makePizza, onOrderError);
+// pizzaPalace.order('Four meats', makePizza, onOrderError);
+// pizzaPalace.order('Big Mike', makePizza, onOrderError);
+// pizzaPalace.order('Vienna', makePizza, onOrderError);
+
+// console.log(pizzaPalace.order('Smoked', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Four meats', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Big Mike', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Vienna', makePizza, onOrderError));
+
+// * Task 4 -
