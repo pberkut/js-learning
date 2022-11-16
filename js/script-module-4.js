@@ -336,4 +336,55 @@
 // console.log(pizzaPalace.order('Big Mike', makePizza, onOrderError));
 // console.log(pizzaPalace.order('Vienna', makePizza, onOrderError));
 
-// * Task 4 -
+// * Task 4 - 5
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   orderedItems.forEach(number => {
+//     totalPrice += number;
+//   });
+
+//   // for (let i = 0; i < orderedItems.length; i += 1) {
+//   //   totalPrice += orderedItems[i];
+//   // }
+
+//   // Change code above this line
+//   return totalPrice;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+// console.log(calculateTotalPrice([12, 21, 21, 2]));
+
+// * Task 4 - 6
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   numbers.forEach(number => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   /*
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       filteredNumbers.push(numbers[i]);
+//     }
+//   }
+// */
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+//* Task 4 - 7
