@@ -416,4 +416,34 @@
 // console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
 // console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 
-// * Task 4 - 8
+// * Task 4 - 13
+// function changeEven(numbers, value) {
+//   let newNumbers = [];
+
+//   numbers.forEach(number => {
+//     if (number % 2 === 0) {
+//       newNumbers.push(number + value);
+//     } else {
+//       newNumbers.push(number);
+//     }
+//   });
+
+//   return newNumbers;
+// }
+
+// /*
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       numbers[i] = numbers[i] + value;
+//     }
+//   }
+//   // Change code above this line
+// }
+// */
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+// console.log(changeEven([17, 24, 68, 31, 42], 100));
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
