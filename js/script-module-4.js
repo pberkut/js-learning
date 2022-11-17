@@ -622,32 +622,105 @@ console.log(getUserFriends(users));
 // console.log(average); // Массив объектов с именами Poly и Houston
 
 //  * Task 4 - 21
-const books = [
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
+// ];
+
+// const MIN_RATING = 8;
+// const AUTHOR = 'Bernard Cornwell';
+// // Change code below this line
+
+// const topRatedBooks = books.filter(({ rating }) => rating >= MIN_RATING);
+// const booksByAuthor = books.filter(({ author }) => author === AUTHOR);
+
+// console.log(topRatedBooks);
+// console.log(booksByAuthor);
+
+// * Task 4 - 22
+const users = [
   {
-    title: 'The Last Kingdom',
-    author: 'Bernard Cornwell',
-    rating: 8.38,
+    name: 'Moore Hensley',
+    email: 'moorehensley@indexia.com',
+    eyeColor: 'blue',
+    friends: ['Sharron Pace'],
+    isActive: false,
+    balance: 2811,
+    gender: 'male',
   },
   {
-    title: 'Beside Still Waters',
-    author: 'Robert Sheckley',
-    rating: 8.51,
+    name: 'Sharlene Bush',
+    email: 'sharlenebush@tubesys.com',
+    eyeColor: 'blue',
+    friends: ['Briana Decker', 'Sharron Pace'],
+    isActive: true,
+    balance: 3821,
+    gender: 'female',
   },
   {
-    title: 'The Dream of a Ridiculous Man',
-    author: 'Fyodor Dostoevsky',
-    rating: 7.75,
+    name: 'Ross Vazquez',
+    email: 'rossvazquez@xinware.com',
+    eyeColor: 'green',
+    friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+    isActive: false,
+    balance: 3793,
+    gender: 'male',
   },
-  { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
-  { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
+  {
+    name: 'Elma Head',
+    email: 'elmahead@omatom.com',
+    eyeColor: 'green',
+    friends: ['Goldie Gentry', 'Aisha Tran'],
+    isActive: true,
+    balance: 2278,
+    gender: 'female',
+  },
+  {
+    name: 'Carey Barr',
+    email: 'careybarr@nurali.com',
+    eyeColor: 'blue',
+    friends: ['Jordan Sampson', 'Eddie Strong'],
+    isActive: true,
+    balance: 3951,
+    gender: 'male',
+  },
+  {
+    name: 'Blackburn Dotson',
+    email: 'blackburndotson@furnigeer.com',
+    eyeColor: 'brown',
+    friends: ['Jacklyn Lucas', 'Linda Chapman'],
+    isActive: false,
+    balance: 1498,
+    gender: 'male',
+  },
+  {
+    name: 'Sheree Anthony',
+    email: 'shereeanthony@kog.com',
+    eyeColor: 'brown',
+    friends: ['Goldie Gentry', 'Briana Decker'],
+    isActive: true,
+    balance: 2764,
+    gender: 'female',
+  },
 ];
 
-const MIN_RATING = 8;
-const AUTHOR = 'Bernard Cornwell';
-// Change code below this line
+const getUsersWithEyeColor = (users, color) => {
+  return users.filter(({ eyeColor }) => eyeColor === color);
+};
 
-const topRatedBooks = books.filter(({ rating }) => rating >= MIN_RATING);
-const booksByAuthor = books.filter(({ author }) => author === AUTHOR);
-
-console.log(topRatedBooks);
-console.log(booksByAuthor);
+console.log(getUsersWithEyeColor(users, 'blue'));
