@@ -941,4 +941,256 @@ console.log(getUserFriends(users));
 // console.log(getUserWithEmail(users, 'elmahead@omatom.com'));
 // console.log(getUserWithEmail(users, 'blackburndotson@furnigeer.com'));
 
-// * Task 4  - 30
+// * Task 4  - 30 every()
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every(value => value % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(value => value % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every(value => value % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every(value => value % 2 !== 0);
+
+// const eachElementInThirdIsEven = thirdArray.every(value => value % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(value => value % 2 !== 0);
+
+// console.log(eachElementInFirstIsEven);
+// console.log(eachElementInFirstIsOdd);
+
+// console.log(eachElementInSecondIsEven);
+// console.log(eachElementInSecondIsOdd);
+
+// console.log(eachElementInThirdIsEven);
+// console.log(eachElementInThirdIsOdd);
+
+// * Task 4 - 31
+// const users = [
+//   {
+//     name: 'Moore Hensley',
+//     email: 'moorehensley@indexia.com',
+//     eyeColor: 'blue',
+//     friends: ['Sharron Pace'],
+//     isActive: false,
+//     balance: 2811,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sharlene Bush',
+//     email: 'sharlenebush@tubesys.com',
+//     eyeColor: 'blue',
+//     friends: ['Briana Decker', 'Sharron Pace'],
+//     isActive: true,
+//     balance: 3821,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Ross Vazquez',
+//     email: 'rossvazquez@xinware.com',
+//     eyeColor: 'green',
+//     friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//     isActive: false,
+//     balance: 3793,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Elma Head',
+//     email: 'elmahead@omatom.com',
+//     eyeColor: 'green',
+//     friends: ['Goldie Gentry', 'Aisha Tran'],
+//     isActive: true,
+//     balance: 2278,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Carey Barr',
+//     email: 'careybarr@nurali.com',
+//     eyeColor: 'blue',
+//     friends: ['Jordan Sampson', 'Eddie Strong'],
+//     isActive: true,
+//     balance: 3951,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Blackburn Dotson',
+//     email: 'blackburndotson@furnigeer.com',
+//     eyeColor: 'brown',
+//     friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//     isActive: false,
+//     balance: 1498,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sheree Anthony',
+//     email: 'shereeanthony@kog.com',
+//     eyeColor: 'brown',
+//     friends: ['Goldie Gentry', 'Briana Decker'],
+//     isActive: true,
+//     balance: 2764,
+//     gender: 'female',
+//   },
+// ];
+
+// const isEveryUserActive = users => users.every(({ isActive }) => isActive === true);
+
+// console.log(isEveryUserActive(users));
+
+// * Task 4 - 32
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change below this line
+
+// const anyElementInFirstIsEven = firstArray.some(value => value % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some(value => value % 2 !== 0);
+
+// const anyElementInSecondIsEven = secondArray.some(value => value % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some(value => value % 2 !== 0);
+
+// const anyElementInThirdIsEven = thirdArray.some(value => value % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some(value => value % 2 !== 0);
+
+// console.log(anyElementInFirstIsEven);
+// console.log(anyElementInFirstIsOdd);
+
+// console.log(anyElementInSecondIsEven);
+// console.log(anyElementInSecondIsOdd);
+
+// console.log(anyElementInThirdIsEven);
+// console.log(anyElementInThirdIsOdd);
+
+// * Task 4 - 33
+// const users = [
+//   {
+//     name: 'Moore Hensley',
+//     email: 'moorehensley@indexia.com',
+//     eyeColor: 'blue',
+//     friends: ['Sharron Pace'],
+//     isActive: false,
+//     balance: 2811,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sharlene Bush',
+//     email: 'sharlenebush@tubesys.com',
+//     eyeColor: 'blue',
+//     friends: ['Briana Decker', 'Sharron Pace'],
+//     isActive: true,
+//     balance: 3821,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Ross Vazquez',
+//     email: 'rossvazquez@xinware.com',
+//     eyeColor: 'green',
+//     friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//     isActive: false,
+//     balance: 3793,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Elma Head',
+//     email: 'elmahead@omatom.com',
+//     eyeColor: 'green',
+//     friends: ['Goldie Gentry', 'Aisha Tran'],
+//     isActive: true,
+//     balance: 2278,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Carey Barr',
+//     email: 'careybarr@nurali.com',
+//     eyeColor: 'blue',
+//     friends: ['Jordan Sampson', 'Eddie Strong'],
+//     isActive: true,
+//     balance: 3951,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Blackburn Dotson',
+//     email: 'blackburndotson@furnigeer.com',
+//     eyeColor: 'brown',
+//     friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//     isActive: false,
+//     balance: 1498,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sheree Anthony',
+//     email: 'shereeanthony@kog.com',
+//     eyeColor: 'brown',
+//     friends: ['Goldie Gentry', 'Briana Decker'],
+//     isActive: true,
+//     balance: 2764,
+//     gender: 'female',
+//   },
+// ];
+
+// const isAnyUserActive = users => users.some(({ isActive }) => isActive === true);
+
+// console.log(isAnyUserActive(users));
+
+// * Task 4 - 34. reduce()
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((previousValue, number) => previousValue + number);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// console.log(averagePlayTime);
+
+// * Example reduce()
+// const array = [1, 1, 1, 1, 1];
+
+// const result = array.reduce((previousValue, value, index, array) => {
+//   console.log('previousValue: ', previousValue);
+//   console.log('value:', value);
+//   console.log('index: ', index);
+//   console.log('array: ', array);
+//   return previousValue + value;
+// }, 0);
+
+// console.log(result);
+
+// * Task 4 - 35
+// const players = [
+//   { name: 'Mango', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Poly', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Ajax', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Kiwi', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce(
+//   (total, { playtime, gamesPlayed }) => total + playtime / gamesPlayed,
+//   0,
+// );
+
+// console.log(totalAveragePlaytimePerGame);
+
+// // Example reduce
+// const students = [
+//   { name: 'Mango', score: 83 },
+//   { name: 'Poly', score: 59 },
+//   { name: 'Ajax', score: 37 },
+//   { name: 'Kiwi', score: 94 },
+//   { name: 'Houston', score: 64 },
+// ];
+
+// // Название аккумулятора может быть произвольным, это просто параметр функции
+// const totalScore = students.reduce(function (total, students) {
+//   return total + students.score;
+// }, 0);
+
+// const averageScore = totalScore / students.length;
+
+// console.log(averageScore);
