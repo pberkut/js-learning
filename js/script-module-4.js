@@ -1196,71 +1196,71 @@ console.log(getUserFriends(users));
 // console.log(averageScore);
 
 // * Task 4 - 36
-const users = [
-  {
-    name: 'Moore Hensley',
-    email: 'moorehensley@indexia.com',
-    eyeColor: 'blue',
-    friends: ['Sharron Pace'],
-    isActive: false,
-    balance: 2811,
-    gender: 'male',
-  },
-  {
-    name: 'Sharlene Bush',
-    email: 'sharlenebush@tubesys.com',
-    eyeColor: 'blue',
-    friends: ['Briana Decker', 'Sharron Pace'],
-    isActive: true,
-    balance: 3821,
-    gender: 'female',
-  },
-  {
-    name: 'Ross Vazquez',
-    email: 'rossvazquez@xinware.com',
-    eyeColor: 'green',
-    friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
-    isActive: false,
-    balance: 3793,
-    gender: 'male',
-  },
-  {
-    name: 'Elma Head',
-    email: 'elmahead@omatom.com',
-    eyeColor: 'green',
-    friends: ['Goldie Gentry', 'Aisha Tran'],
-    isActive: true,
-    balance: 2278,
-    gender: 'female',
-  },
-  {
-    name: 'Carey Barr',
-    email: 'careybarr@nurali.com',
-    eyeColor: 'blue',
-    friends: ['Jordan Sampson', 'Eddie Strong'],
-    isActive: true,
-    balance: 3951,
-    gender: 'male',
-  },
-  {
-    name: 'Blackburn Dotson',
-    email: 'blackburndotson@furnigeer.com',
-    eyeColor: 'brown',
-    friends: ['Jacklyn Lucas', 'Linda Chapman'],
-    isActive: false,
-    balance: 1498,
-    gender: 'male',
-  },
-  {
-    name: 'Sheree Anthony',
-    email: 'shereeanthony@kog.com',
-    eyeColor: 'brown',
-    friends: ['Goldie Gentry', 'Briana Decker'],
-    isActive: true,
-    balance: 2764,
-    gender: 'female',
-  },
-];
+// const users = [
+//   {
+//     name: 'Moore Hensley',
+//     email: 'moorehensley@indexia.com',
+//     eyeColor: 'blue',
+//     friends: ['Sharron Pace'],
+//     isActive: false,
+//     balance: 2811,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sharlene Bush',
+//     email: 'sharlenebush@tubesys.com',
+//     eyeColor: 'blue',
+//     friends: ['Briana Decker', 'Sharron Pace'],
+//     isActive: true,
+//     balance: 3821,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Ross Vazquez',
+//     email: 'rossvazquez@xinware.com',
+//     eyeColor: 'green',
+//     friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//     isActive: false,
+//     balance: 3793,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Elma Head',
+//     email: 'elmahead@omatom.com',
+//     eyeColor: 'green',
+//     friends: ['Goldie Gentry', 'Aisha Tran'],
+//     isActive: true,
+//     balance: 2278,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Carey Barr',
+//     email: 'careybarr@nurali.com',
+//     eyeColor: 'blue',
+//     friends: ['Jordan Sampson', 'Eddie Strong'],
+//     isActive: true,
+//     balance: 3951,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Blackburn Dotson',
+//     email: 'blackburndotson@furnigeer.com',
+//     eyeColor: 'brown',
+//     friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//     isActive: false,
+//     balance: 1498,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sheree Anthony',
+//     email: 'shereeanthony@kog.com',
+//     eyeColor: 'brown',
+//     friends: ['Goldie Gentry', 'Briana Decker'],
+//     isActive: true,
+//     balance: 2764,
+//     gender: 'female',
+//   },
+// ];
 
 // // Change code below this line
 // const calculateTotalBalance = users => {
@@ -1398,3 +1398,203 @@ const users = [
 //   firstStudent.name.localeCompare(secondStudent.name),
 // );
 // console.log(inAlphabeticalOrder);
+
+// * Task 4 - 42
+// const users = [
+//   {
+//     name: 'Moore Hensley',
+//     email: 'moorehensley@indexia.com',
+//     eyeColor: 'blue',
+//     friends: ['Sharron Pace'],
+//     isActive: false,
+//     balance: 2811,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sharlene Bush',
+//     email: 'sharlenebush@tubesys.com',
+//     eyeColor: 'blue',
+//     friends: ['Briana Decker', 'Sharron Pace'],
+//     isActive: true,
+//     balance: 3821,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Ross Vazquez',
+//     email: 'rossvazquez@xinware.com',
+//     eyeColor: 'green',
+//     friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//     isActive: false,
+//     balance: 3793,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Elma Head',
+//     email: 'elmahead@omatom.com',
+//     eyeColor: 'green',
+//     friends: ['Goldie Gentry', 'Aisha Tran'],
+//     isActive: true,
+//     balance: 2278,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Carey Barr',
+//     email: 'careybarr@nurali.com',
+//     eyeColor: 'blue',
+//     friends: ['Jordan Sampson', 'Eddie Strong'],
+//     isActive: true,
+//     balance: 3951,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Blackburn Dotson',
+//     email: 'blackburndotson@furnigeer.com',
+//     eyeColor: 'brown',
+//     friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//     isActive: false,
+//     balance: 1498,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sheree Anthony',
+//     email: 'shereeanthony@kog.com',
+//     eyeColor: 'brown',
+//     friends: ['Goldie Gentry', 'Briana Decker'],
+//     isActive: true,
+//     balance: 2764,
+//     gender: 'female',
+//   },
+// ];
+
+// // Change code below this line
+// const sortByAscendingBalance = users => {
+//   return users.sort((a, b) => a.balance - b.balance);
+// };
+// // Change code above this line
+
+// console.table(sortByAscendingBalance(users));
+
+// * Task 4 - 43
+// Change code below this line
+// const sortByDescendingFriendCount = users => [...users].sort((a, b) => b.friends.length - a.friends.length);
+// // Change code above this line
+// console.table(users);
+// console.table(sortByDescendingFriendCount(users));
+
+// * Task 4 - 44
+// // Change code below this line
+// const sortByName = users => {
+//   return [...users].sort((a, b) => a.name.localeCompare(b.name));
+// };
+// // Change code above this line
+
+// console.table(sortByName(users));
+
+// * Task 4 - 45
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   {
+//     title: 'The Dreams in the Witch House',
+//     author: 'Howard Lovecraft',
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books]
+//   .filter(({ rating }) => rating > MIN_BOOK_RATING) //Фильтрация по рейтингу
+//   .sort((a, b) => a.author.localeCompare(b.author)) // Сортировка по алфавитному порядку имен авторов
+//   .map(({ author }) => author); // Создаёт от фильтрованный и сортированный массив имён авторов
+
+// console.log(names);
+// console.table(names);
+
+// * Ефыл 4 - 46
+const users = [
+  {
+    name: 'Moore Hensley',
+    email: 'moorehensley@indexia.com',
+    eyeColor: 'blue',
+    friends: ['Sharron Pace'],
+    isActive: false,
+    balance: 2811,
+    gender: 'male',
+  },
+  {
+    name: 'Sharlene Bush',
+    email: 'sharlenebush@tubesys.com',
+    eyeColor: 'blue',
+    friends: ['Briana Decker', 'Sharron Pace'],
+    isActive: true,
+    balance: 3821,
+    gender: 'female',
+  },
+  {
+    name: 'Ross Vazquez',
+    email: 'rossvazquez@xinware.com',
+    eyeColor: 'green',
+    friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+    isActive: false,
+    balance: 3793,
+    gender: 'male',
+  },
+  {
+    name: 'Elma Head',
+    email: 'elmahead@omatom.com',
+    eyeColor: 'green',
+    friends: ['Goldie Gentry', 'Aisha Tran'],
+    isActive: true,
+    balance: 2278,
+    gender: 'female',
+  },
+  {
+    name: 'Carey Barr',
+    email: 'careybarr@nurali.com',
+    eyeColor: 'blue',
+    friends: ['Jordan Sampson', 'Eddie Strong', 'Adrian Cross'],
+    isActive: true,
+    balance: 3951,
+    gender: 'male',
+  },
+  {
+    name: 'Blackburn Dotson',
+    email: 'blackburndotson@furnigeer.com',
+    eyeColor: 'brown',
+    friends: ['Jacklyn Lucas', 'Linda Chapman', 'Adrian Cross', 'Solomon Fokes'],
+    isActive: false,
+    balance: 1498,
+    gender: 'male',
+  },
+  {
+    name: 'Sheree Anthony',
+    email: 'shereeanthony@kog.com',
+    eyeColor: 'brown',
+    friends: ['Goldie Gentry', 'Briana Decker'],
+    isActive: true,
+    balance: 2764,
+    gender: 'female',
+  },
+];
+
+// // Change code below this line
+// const getNamesSortedByFriendCount = users =>
+//   [...users].sort((a, b) => a.friends.length - b.friends.length).map(({ name }) => name);
+// // Change code above this line
+
+// console.log(getNamesSortedByFriendCount(users));
