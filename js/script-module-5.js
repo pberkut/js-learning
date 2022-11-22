@@ -63,3 +63,29 @@
 
 // // ✅ Стало
 // makeMessage(customer.getFullName.bind(customer)); // Обрабатываем заявку от Jacob Mercer.
+
+// * Task 5 - 1
+// const pizzaPalace = {
+//   pizzas: ['Supercheese', 'Smoked', 'Four meats'],
+//   // Change code below this line
+//   checkPizza(pizzaName) {
+//     return this.pizzas.includes(pizzaName);
+//   },
+//   order(pizzaName) {
+//     const isPizzaAvailable = this.checkPizza(pizzaName);
+
+//     if (!isPizzaAvailable) {
+//       return `Sorry, there is no pizza named «${pizzaName}»`;
+//     }
+
+//     return `Order accepted, preparing «${pizzaName}» pizza`;
+//   },
+//   // Change code above this line
+// };
+
+// console.log(pizzaPalace.checkPizza('Smoked'));
+// console.log(pizzaPalace.order('Smoked'));
+// console.log(pizzaPalace.checkPizza('Rage'));
+// console.log(pizzaPalace.order('Rage'));
+
+// * Task 5 - 2
