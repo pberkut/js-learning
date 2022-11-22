@@ -149,3 +149,41 @@
 // console.log(historyService.getOrdersByEmail('jacob@hotmail.com'));
 
 // * Task 5 - 4
+
+// Example
+// const animal = {
+//   legs: 4,
+// };
+// const dog = Object.create(animal);
+// dog.name = 'Mango';
+
+// console.log(dog); // { name: 'Mango', __proto__: animal }
+// console.log(animal.isPrototypeOf(dog)); // true
+
+// console.log(dog.hasOwnProperty('name')); // true
+// console.log(dog.name); // 'Mango'
+
+// console.log(dog.hasOwnProperty('legs')); // false
+// console.log(dog.legs); // 4
+
+// * Task 5 - 5
+const ancestor = {
+  name: 'Paul',
+  age: 83,
+  surname: 'Dawson',
+  heritage: 'Irish',
+};
+// Change code below this line
+
+const parent = Object.create(ancestor);
+parent.name = 'Stacey';
+parent.surname = 'Moore';
+parent.age = 54;
+
+const child = Object.create(parent);
+child.name = 'Jason';
+child.age = 27;
+
+// Change code above this line
+
+console.log(child);
