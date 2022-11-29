@@ -224,6 +224,8 @@ class Car1 {
     console.log('Car.logInfo -> carObj', carObj);
   }
 
+  #test = 'test';
+
   constructor({ brand, model, price } = {}) {
     this.brand = brand;
     this.model = model;
@@ -239,5 +241,13 @@ class Car1 {
   }
 }
 
-console.dir(Car1);
-console.log(Car1.description);
+// console.dir(Car1);
+// console.log(Car1.description);
+
+const carInstance = new Car1({
+  brand: 'Mercedes',
+  model: 'S200',
+  price: '20000',
+});
+
+console.log(carInstance);
