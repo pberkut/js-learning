@@ -167,23 +167,77 @@
 // console.log(dog.legs); // 4
 
 // * Task 5 - 5
-const ancestor = {
-  name: 'Paul',
-  age: 83,
-  surname: 'Dawson',
-  heritage: 'Irish',
+// const ancestor = {
+//   name: 'Paul',
+//   age: 83,
+//   surname: 'Dawson',
+//   heritage: 'Irish',
+// };
+// // Change code below this line
+
+// const parent = Object.create(ancestor);
+// parent.name = 'Stacey';
+// parent.surname = 'Moore';
+// parent.age = 54;
+
+// const child = Object.create(parent);
+// child.name = 'Jason';
+// child.age = 27;
+
+// // Change code above this line
+
+// console.log(child);
+
+// * Example
+
+const obj = {};
+
+const Car = function ({ brand, model, price } = {}) {
+  this.brand = brand;
+  this.model = model;
+  this.price = price;
 };
-// Change code below this line
 
-const parent = Object.create(ancestor);
-parent.name = 'Stacey';
-parent.surname = 'Moore';
-parent.age = 54;
+Car.prototype.changePrice = function (newPrice) {
+  this.price = newPrice;
+};
 
-const child = Object.create(parent);
-child.name = 'Jason';
-child.age = 27;
+Car.description = 'Класс описывающий машину';
 
-// Change code above this line
+Car.logInfo = function (carObj) {
+  console.log('Car.logInfo -> carObj', carObj);
+};
 
-console.log(child);
+const car = new Car({
+  brand: 'BMW',
+  model: 'X5',
+  price: 1000,
+});
+
+// console.dir(Car);
+// console.log(obj);
+
+class Car1 {
+  static description = 'Клас описывающий машину';
+
+  static logInfo(carObj) {
+    console.log('Car.logInfo -> carObj', carObj);
+  }
+
+  constructor({ brand, model, price } = {}) {
+    this.brand = brand;
+    this.model = model;
+    this.price = price;
+  }
+
+  changePrice(newPrice) {
+    this.price = newPrice;
+  }
+
+  updateModel(newModel) {
+    this.model = newModel;
+  }
+}
+
+console.dir(Car1);
+console.log(Car1.description);
