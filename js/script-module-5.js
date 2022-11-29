@@ -190,64 +190,177 @@
 
 // * Example
 
-const obj = {};
+// const obj = {};
 
-const Car = function ({ brand, model, price } = {}) {
-  this.brand = brand;
-  this.model = model;
-  this.price = price;
-};
+// const Car = function ({ brand, model, price } = {}) {
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
+// };
 
-Car.prototype.changePrice = function (newPrice) {
-  this.price = newPrice;
-};
+// Car.prototype.changePrice = function (newPrice) {
+//   this.price = newPrice;
+// };
 
-Car.description = 'Класс описывающий машину';
+// Car.description = 'Класс описывающий машину';
 
-Car.logInfo = function (carObj) {
-  console.log('Car.logInfo -> carObj', carObj);
-};
+// Car.logInfo = function (carObj) {
+//   console.log('Car.logInfo -> carObj', carObj);
+// };
 
-const car = new Car({
-  brand: 'BMW',
-  model: 'X5',
-  price: 1000,
-});
+// const car = new Car({
+//   brand: 'BMW',
+//   model: 'X5',
+//   price: 1000,
+// });
 
-// console.dir(Car);
-// console.log(obj);
+// // console.dir(Car);
+// // console.log(obj);
 
-class Car1 {
-  static description = 'Клас описывающий машину';
+// class Car1 {
+//   static description = 'Клас описывающий машину';
 
-  static logInfo(carObj) {
-    console.log('Car.logInfo -> carObj', carObj);
-  }
+//   static logInfo(carObj) {
+//     console.log('Car.logInfo -> carObj', carObj);
+//   }
 
-  #test = 'test';
+//   #test = 'test';
 
-  constructor({ brand, model, price } = {}) {
-    this.brand = brand;
-    this.model = model;
-    this.price = price;
-  }
+//   constructor({ brand, model, price } = {}) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
 
-  changePrice(newPrice) {
-    this.price = newPrice;
-  }
+//   changePrice(newPrice) {
+//     this.price = newPrice;
+//   }
 
-  updateModel(newModel) {
-    this.model = newModel;
-  }
-}
+//   updateModel(newModel) {
+//     this.model = newModel;
+//   }
+// }
 
-// console.dir(Car1);
-// console.log(Car1.description);
+// // console.dir(Car1);
+// // console.log(Car1.description);
 
-const carInstance = new Car1({
-  brand: 'Mercedes',
-  model: 'S200',
-  price: '20000',
-});
+// const carInstance = new Car1({
+//   brand: 'Mercedes',
+//   model: 'S200',
+//   price: '20000',
+// });
 
-console.log(carInstance);
+// console.log(carInstance);
+
+// * Task 5 - 7
+// class Car {
+//   constructor(brand, model, price) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+// }
+
+// const car = new Car('Audi', '200', 2000);
+
+// console.log(car);
+
+// * Task 5 - 8
+// class Car {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+// }
+
+// const car = new Car({ brand: 'Audi', model: '200', price: 2000 });
+
+// console.log(car);
+
+// * Task 5 - 9
+// class Car {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+
+//   getPrice() {
+//     return this.price;
+//   }
+
+//   changePrice(newPrice) {
+//     return (this.price = newPrice);
+//   }
+// }
+
+// const car = new Car({ brand: 'Audi', model: '200', price: 2000 });
+
+// console.log(car);
+// console.log(car.getPrice());
+// console.log(car.changePrice(100));
+
+// * Task 5 - 10
+// class Storage {
+//   constructor(items = []) {
+//     this.items = items;
+//   }
+
+//   getItems() {
+//     return this.items;
+//   }
+
+//   addItem(newItem) {
+//     this.items.push(newItem);
+//   }
+
+//   removeItem(itemToRemove) {
+//     this.items = this.items.filter(item => item !== itemToRemove);
+//   }
+// }
+
+// // Change code above this line
+// const storage = new Storage(['Nanitoids', 'Prolonger', 'Antigravitator']);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem('Droid');
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem('Prolonger');
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// * Task 5 - 11
+// class StringBuilder {
+//   constructor(initialValue) {
+//     this.value = initialValue;
+//   }
+
+//   getValue() {
+//     return this.value;
+//   }
+
+//   padEnd(str) {
+//     this.value = `${this.value + str}`;
+//   }
+
+//   padStart(str) {
+//     this.value = `${str + this.value}`;
+//   }
+
+//   padBoth(str) {
+//     this.value = `${str + this.value + str}`;
+//   }
+// }
+
+// // Change code above this line
+// const builder = new StringBuilder('.');
+// console.log(builder.getValue()); // "."
+// builder.padStart('^');
+// console.log(builder.getValue()); // "^."
+// builder.padEnd('^');
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth('=');
+// console.log(builder.getValue()); // "=^.^="
+
+// console.log(builder);
+
+// * Task 5 - 12
