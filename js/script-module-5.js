@@ -520,3 +520,33 @@
 // }
 
 // * Task 5 - 16
+// class Car {
+//   // Change code below this line
+//   static MAX_PRICE = 50_000;
+
+//   #price;
+
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (newPrice <= Car.MAX_PRICE) {
+//       this.#price = newPrice;
+//     }
+//   }
+//   // Change code above this line
+// }
+
+// const audi = new Car({ price: 35_000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49_000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51_000;
+// console.log(audi.price); // 49000
