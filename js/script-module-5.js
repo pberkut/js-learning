@@ -550,3 +550,168 @@
 
 // audi.price = 51_000;
 // console.log(audi.price); // 49000
+
+//  * Task 5 - 17
+// class Car {
+//   static #MAX_PRICE = 50000;
+//   // Change code below this line
+
+//   static checkPrice(price) {
+//     return price > Car.#MAX_PRICE
+//       ? 'Error! Price exceeds the maximum'
+//       : 'Success! Price is within acceptable limits';
+//   }
+
+//   // Change code above this line
+//   constructor({ price }) {
+//     this.price = price;
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+
+// * Task 5 - 18
+// class User {
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class Admin extends User {
+//   static AccessLevel = {
+//     BASIC: 'basic',
+//     SUPERUSER: 'superuser',
+//   };
+// }
+// // Change code below this line
+
+// console.log(Admin.AccessLevel.BASIC);
+// console.log(Admin.AccessLevel.SUPERUSER);
+
+// * Task 5 - 19
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class Admin extends User {
+//   // Change code below this line
+//   constructor({ email, accessLevel } = {}) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+
+//   static AccessLevel = {
+//     BASIC: 'basic',
+//     SUPERUSER: 'superuser',
+//   };
+
+//   // Change code above this line
+// }
+
+// const mango = new Admin({
+//   email: 'mango@mail.com',
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+
+// * Task 5 - 20
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Change code below this line
+
+//   blacklistedEmails = [];
+
+//   static AccessLevel = {
+//     BASIC: 'basic',
+//     SUPERUSER: 'superuser',
+//   };
+
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+//   }
+
+//   isBlacklisted(email) {
+//     return this.blacklistedEmails.some(element => element === email);
+//     // Change code above this line
+//   }
+// }
+
+// const mango = new Admin({
+//   email: 'mango@mail.com',
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+
+// mango.blacklist('poly@mail.com');
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted('mango@mail.com')); // false
+// console.log(mango.isBlacklisted('poly@mail.com')); // true
+
+// * Task
+// Write the code which verify user rights.
+// Step 1. Check login
+// 	Ask user for a login // use prompt()
+// 	If the input is an empty line or Esc – show "Canceled." // for showing - use alert()
+// 	If the input length less than 4 symbols - show "I don't know any users having name length less than 4 symbols".
+// 	If it's another string – then show "I don't know you".
+// 	If the visitor enters "User" or "Admin", then prompt for a password.
+// Step 2. Check password:
+// 	For an empty string or cancelled input, show "Canceled."
+// 	For login "User" correct password is "UserPass", for "Admin" correct password is  "RootPass".
+// In other case, show "Wrong password".
+// Step 3. Greets the user appropriately:
+// 	If the current time in hours is more then 5.00 and less then 20:
+// 	For "User" show "Good day, dear User!"
+// 	For "Admin" show "Good day, dear Admin!"
+// 	In other way:
+// 	For "User" show "Good evening, dear User!"
+// 	For "Admin" show "Good evening, dear Admin!"
+
+// P.S.: щоб отримати інформавцію про поточний час для реалізації п. 3 завдання, створіть змінну: const hours = new Date().getHours()
