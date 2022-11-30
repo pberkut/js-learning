@@ -715,3 +715,127 @@
 // 	For "Admin" show "Good evening, dear Admin!"
 
 // P.S.: щоб отримати інформавцію про поточний час для реалізації п. 3 завдання, створіть змінну: const hours = new Date().getHours()
+
+// * Example
+// // Змініть код лише під цим рядком
+// var a = 5;
+// var b = 10;
+// var c = 'I am a';
+// // Змініть код лише над цим рядком
+
+// a = a + 1;
+// b = b + 5;
+// c = c + ' String!';
+
+// console.log(c);
+// console.log(a);
+// console.log(b);
+
+// * Example
+// var camper = 'James';
+// var camper = 'David';
+// console.log(camper);
+
+// let camper = 'James';
+// let camper = 'David';
+
+// const myDecimal = 11 % 3;
+// console.log(myDecimal);
+
+// const sampleStr = 'Alan said, "Peter is learning JavaScript".';
+
+// console.log(sampleStr);
+
+// const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+// console.log(myStr);
+
+// const str = 'Это новый абзац \nНовый абзац.\n\n\nпокаать косую линию \\ \n " \n \' \n \tабзац \t';
+// const str1 = 'Возвр\fат каретки \rВозврат каретки \b \b';
+// const myStr = 'FirstLine\n\t\\SecondLine\nThirdLine';
+// console.log(str);
+// console.log(str1);
+// console.log(myStr);
+
+// const str = 'Hello World!';
+// const lastCharactare = str[str.length - 1];
+
+// console.log(lastCharactare);
+
+// const arr = [
+//   [1, 32, 67],
+//   [90, 23, [23, 23, 11]],
+//   [[18, 5, 10, 6], 23, [23, 2, 7]],
+// ];
+
+// console.log(arr[2][0][1]);
+
+// Налаштування
+// const myArray = [
+//   ['John', 23],
+//   ['cat', 2],
+// ];
+
+// // Змініть код лише під цим рядком
+// const removedFromMyArray = myArray.pop();
+
+// const myArray = [
+//   ['John', 23],
+//   ['dog', 3],
+// ];
+
+// // Змініть код лише під цим рядком
+// const removedFromMyArray = myArray.shift();
+// removedFromMyArray.unshift('add');
+
+// console.log(removedFromMyArray);
+
+// function reusableFunction() {
+//   console.log('Hi Word');
+// }
+
+// reusableFunction();
+
+//  * Example
+// Декларуйте змінну myGlobal під цим рядком
+// const myGlobal = 10;
+// let oopsGlobal;
+
+// function fun1() {
+//   // Призначте 5 до oopsGlobal тут
+//   oopsGlobal = 5;
+// }
+
+// // Змініть код лише над цим рядком
+
+// function fun2() {
+//   var output = '';
+//   if (typeof myGlobal != 'undefined') {
+//     output += 'myGlobal: ' + myGlobal;
+//   }
+//   if (typeof oopsGlobal != 'undefined') {
+//     output += ' oopsGlobal: ' + oopsGlobal;
+//   }
+//   console.log(output);
+// }
+
+// fun2();
+
+// * Example
+// function nextInLine(arr, item) {
+//   // Змініть код лише під цим рядком
+//   arr.push(item);
+//   arr.shift();
+//   return item;
+//   // Змініть код лише над цим рядком
+// }
+
+// // Налаштування
+// let testArr = [1, 2, 3, 4, 5];
+
+// // Відобразити код
+// console.log('Before: ' + JSON.stringify(testArr));
+// console.log(nextInLine(testArr, 6));
+// console.log('After: ' + JSON.stringify(testArr));
+// console.log('232');
+
+// * Example
