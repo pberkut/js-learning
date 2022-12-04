@@ -943,44 +943,44 @@
 // });
 // console.log('addNote 2:', myNotes.items);
 
-// myNotes.removeNote('Моя перша замітка');
+// // myNotes.removeNote('Моя перша замітка');
 // console.log('removeNote', myNotes.items);
 
-// myNotes.updateNote('Моя друга замітка', Notes.Priority.HIGH);
+// // myNotes.updateNote('Моя друга замітка', Notes.Priority.HIGH);
 // console.log('updateNote', myNotes.items);
 
 // Example 5 - Toggle
 // Напишіть клас Toggle який приймає об'єкт налаштувань {isOpen: boolean} і оголошує одну властивість on - стан вкл/викл (true/false). За замовчуванням значення властивості on повинно бути false.
 
-// class Toggle {
-//   constructor({ isOpen = false } = {}) {
-//     this.on = isOpen;
-//   }
+class Toggle {
+  constructor({ isOpen = false } = {}) {
+    this.on = isOpen;
+  }
 
-//   toggle() {
-//     if (this.on === true) {
-//       this.on = false;
-//     } else {
-//       this.on = true;
-//     }
-//   }
-// }
+  toggle() {
+    if (this.on === true) {
+      this.on = false;
+    } else {
+      this.on = true;
+    }
+  }
+}
 
-// const firstToggle = new Toggle({ isOpen: true });
+const firstToggle = new Toggle({ isOpen: true });
 
-// // console.log(firstToggle);
+// console.log(firstToggle);
 
-// console.group('firstToggle');
-// console.log(firstToggle.on);
-// firstToggle.toggle();
-// console.log(firstToggle.on);
-// console.groupEnd('firstToggle');
+console.group('firstToggle');
+console.log(firstToggle.on);
+firstToggle.toggle();
+console.log(firstToggle.on);
+console.groupEnd('firstToggle');
 
-// const secondToggle = new Toggle();
-// console.group('secondToggle');
-// console.log('Before toggle: ', secondToggle.on);
-// secondToggle.toggle();
-// console.log('After toggle:', secondToggle.on);
-// console.groupEnd('secondToggle');
+const secondToggle = new Toggle();
+console.group('secondToggle');
+console.log('Before toggle: ', secondToggle.on);
+secondToggle.toggle();
+console.log('After toggle:', secondToggle.on);
+console.groupEnd('secondToggle');
 
-// console.log(window);
+console.log(window);
