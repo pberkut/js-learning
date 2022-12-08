@@ -170,3 +170,74 @@
 // import users from './data/objects.js';
 
 // console.log(users);
+
+// * Example
+// const singleBtn = document.querySelector('#single');
+
+// const handleClick = () => {
+//   console.log('click event listener callback');
+// };
+
+// singleBtn.addEventListener('click', handleClick);
+
+// // ===============================================
+// const multiBtn = document.querySelector('#multiple');
+
+// const firstCallback = () => {
+//   console.log('First callback!');
+// };
+// const secondCallback = () => {
+//   console.log('Second callback!');
+// };
+// const thirdCallback = () => {
+//   console.log('Third callback!');
+// };
+
+// multiBtn.addEventListener('click', firstCallback);
+// multiBtn.addEventListener('click', secondCallback);
+// multiBtn.addEventListener('click', thirdCallback);
+
+// const addListenerBtn = document.querySelector('[data-action="add"]');
+// const removeListenerBtn = document.querySelector('[data-action="remove"]');
+// const btn = document.querySelector('#btn');
+
+// // const handleClick = () => {
+// //   console.log('click event listener callback');
+// // };
+
+// addListenerBtn.addEventListener('click', () => {
+//   btn.addEventListener('click', handleClick);
+//   console.log('click event listener was added to btn');
+// });
+
+// removeListenerBtn.addEventListener('click', () => {
+//   btn.removeEventListener('click', handleClick);
+//   console.log('click event listener was removed from btn');
+// });
+
+// * Exapmle
+const button = document.querySelector('.btn');
+
+const handleClick = event => {
+  console.log('event: ', event);
+  console.log('event type: ', event.type);
+  console.log('currentTarget: ', event.currentTarget);
+};
+
+button.addEventListener('click', handleClick);
+
+document.addEventListener('keydown', event => {
+  console.log('Keydown: ', event.key);
+});
+
+document.addEventListener('keyup', event => {
+  console.log('Keyup: ', event.code);
+});
+
+document.addEventListener('keydown', event => {
+  event.preventDefault();
+
+  if ((event.ctrlKey || event.metaKey) && event.code === 'KeyS') {
+    console.log('«Ctrl + s» or «Command + s» combo');
+  }
+});
