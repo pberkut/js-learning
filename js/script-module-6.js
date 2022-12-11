@@ -242,36 +242,51 @@
 //   }
 // });
 
-// * Example
-import users from './data/objects.js';
+// * Example search and markup
+// import users from './data/objects.js';
 
-const formRef = document.querySelector('.js-search');
-const listRef = formRef.querySelector('.js-list');
+// const formRef = document.querySelector('.js-search');
+// const listRef = formRef.querySelector('.js-list');
 
-const onSearch = evt => {
-  evt.preventDefault();
-  const { queryValue, selectValue } = evt.currentTarget.elements;
-  // console.log(queryValue.value);
-  // console.log(selectValue.value);
-  console.log(queryValue.value);
-  console.log(users[0][selectValue.value]);
+// const onSearch = evt => {
+//   evt.preventDefault();
+//   const { queryValue, selectValue } = evt.currentTarget.elements;
+//   // console.log(queryValue.value);
+//   // console.log(selectValue.value);
+//   console.log(queryValue.value);
+//   console.log(users[0][selectValue.value]);
 
-  const searchResult = users.filter(user => user[selectValue.value].includes(queryValue.value));
+//   const searchResult = users.filter(user => user[selectValue.value].includes(queryValue.value));
 
-  // console.log(searchResult);
-  const markup = searchResult
-    .map(
-      ({ name, gender, eyeColor, balance }) => `<li class="item-list-task-6">
-   <h2>${name}</h2>
-                <p>Gender: ${gender}</p>
-                <p>Eye color: ${eyeColor}</p>
-                <p>Balance: ${balance}</p>
-  </li>`,
-    )
-    .join('');
-  console.log(markup);
+//   // console.log(searchResult);
+//   const markup = searchResult
+//     .map(
+//       ({ name, gender, eyeColor, balance }) =>
+//         `<li class="item-list-task-6">
+//       <h2>${name}</h2>
+//       <p>Gender: ${gender}</p>
+//       <p>Eye color: ${eyeColor}</p>
+//       <p>Balance: ${balance}</p>
+//   </li>`,
+//     )
+//     .join('');
+//   console.log(markup);
 
-  listRef.insertAdjacentHTML('beforeend', markup);
-};
+//   listRef.innerHTML = markup;
+// };
 
-formRef.addEventListener('submit', onSearch);
+// formRef.addEventListener('submit', onSearch);
+
+// * Example learning input
+
+const inputRef = document.querySelector('.js-input');
+
+inputRef.addEventListener('input', onInput);
+
+function onInput(evt) {
+  const query = evt.currentTarget.value;
+  console.log(query);
+  if (!query) {
+    console.log('Empty string.');
+  }
+}
