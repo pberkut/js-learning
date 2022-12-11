@@ -40,4 +40,13 @@ body body {
 
 .group {
   margin-top: 20px;
+}
+
+.item-list-task-6 {
+  list-style: none;
+  border: 1px solid blue;
+}
+
+.item-list-task-6:not(:last-child) {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -19,7 +19,17 @@
     <button class="btn" data-action="remove">Remove Listener</button>
     <hr>
     <button id="btn" class="btn">Click me</button> -->
-    <button type="button" class="btn">Click me</button>
+
+    <form action="submit" class="js-search">
+        <input type="text" name="queryValue">
+        <select name="selectValue">
+            <option value="gender">Gender</option>
+            <option value="eyeColor">Eye color</option>
+        </select>
+        <button type="submit" class="js-submit-btn">Find</button>
+        <ul class="js-list"></ul>
+    </form>
+
 
     <script src="./js/script-module-6.js" type="module"></script>
 </body>

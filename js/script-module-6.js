@@ -216,28 +216,62 @@
 // });
 
 // * Exapmle
-const button = document.querySelector('.btn');
+// const button = document.querySelector('.btn');
 
-const handleClick = event => {
-  console.log('event: ', event);
-  console.log('event type: ', event.type);
-  console.log('currentTarget: ', event.currentTarget);
+// const handleClick = event => {
+//   console.log('event: ', event);
+//   console.log('event type: ', event.type);
+//   console.log('currentTarget: ', event.currentTarget);
+// };
+
+// button.addEventListener('click', handleClick);
+
+// document.addEventListener('keydown', event => {
+//   console.log('Keydown: ', event.key);
+// });
+
+// document.addEventListener('keyup', event => {
+//   console.log('Keyup: ', event.code);
+// });
+
+// document.addEventListener('keydown', event => {
+//   event.preventDefault();
+
+//   if ((event.ctrlKey || event.metaKey) && event.code === 'KeyS') {
+//     console.log('«Ctrl + s» or «Command + s» combo');
+//   }
+// });
+
+// * Example
+import users from './data/objects.js';
+
+const formRef = document.querySelector('.js-search');
+const listRef = formRef.querySelector('.js-list');
+
+const onSearch = evt => {
+  evt.preventDefault();
+  const { queryValue, selectValue } = evt.currentTarget.elements;
+  // console.log(queryValue.value);
+  // console.log(selectValue.value);
+  console.log(queryValue.value);
+  console.log(users[0][selectValue.value]);
+
+  const searchResult = users.filter(user => user[selectValue.value].includes(queryValue.value));
+
+  // console.log(searchResult);
+  const markup = searchResult
+    .map(
+      ({ name, gender, eyeColor, balance }) => `<li class="item-list-task-6">
+   <h2>${name}</h2>
+                <p>Gender: ${gender}</p>
+                <p>Eye color: ${eyeColor}</p>
+                <p>Balance: ${balance}</p>
+  </li>`,
+    )
+    .join('');
+  console.log(markup);
+
+  listRef.insertAdjacentHTML('beforeend', markup);
 };
 
-button.addEventListener('click', handleClick);
-
-document.addEventListener('keydown', event => {
-  console.log('Keydown: ', event.key);
-});
-
-document.addEventListener('keyup', event => {
-  console.log('Keyup: ', event.code);
-});
-
-document.addEventListener('keydown', event => {
-  event.preventDefault();
-
-  if ((event.ctrlKey || event.metaKey) && event.code === 'KeyS') {
-    console.log('«Ctrl + s» or «Command + s» combo');
-  }
-});
+formRef.addEventListener('submit', onSearch);
