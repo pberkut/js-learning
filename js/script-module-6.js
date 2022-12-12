@@ -279,14 +279,78 @@
 
 // * Example learning input
 
-const inputRef = document.querySelector('.js-input');
+// const inputRef = document.querySelector('.js-input');
 
-inputRef.addEventListener('input', onInput);
+// inputRef.addEventListener('input', onInput);
 
-function onInput(evt) {
-  const query = evt.currentTarget.value;
-  console.log(query);
-  if (!query) {
-    console.log('Empty string.');
-  }
-}
+// function onInput(evt) {
+//   const query = evt.currentTarget.value;
+//   console.log(query);
+//   if (!query) {
+//     console.log('Empty string.');
+//   }
+// }
+
+// * Example event listener combination key
+
+// document.addEventListener('keydown', onPress);
+
+// function onPress(evt) {
+//   if (evt.ctrlKey && evt.code === 'KeyV') {
+//     evt.preventDefault();
+//     alert('You press "ctrl + A"');
+//   }
+
+//   console.log(evt);
+// }
+
+// * Example freecodecamp
+
+// const recordCollection = {
+//   2548: {
+//     albumTitle: 'Slippery When Wet',
+//     artist: 'Bon Jovi',
+//     tracks: ['Let It Rock', 'You Give Love a Bad Name'],
+//   },
+//   2468: {
+//     albumTitle: '1999',
+//     artist: 'Prince',
+//     tracks: ['1999', 'Little Red Corvette'],
+//   },
+//   1245: {
+//     artist: 'Robert Palmer',
+//     tracks: [],
+//   },
+//   5439: {
+//     albumTitle: 'ABBA Gold',
+//   },
+// };
+
+// // Змініть код лише під цим рядком
+// function updateRecords(records, id, prop, value) {
+//   if (prop !== 'tracks' && value !== '') {
+//     records[id][prop] = value;
+//   } else if (prop === 'tracks' && records[id].hasOwnProperty('tracks') === false) {
+//     records[id][prop] = [value];
+//   } else if (prop === 'tracks' && value !== '') {
+//     records[id][prop].push(value);
+//   } else if (value === '') {
+//     delete records[id][prop];
+//   }
+
+//   return records;
+// }
+
+// console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'));
+
+// * Example
+// const myArray = [];
+
+// let i = 5;
+
+// while (i >= 0) {
+//   myArray.push(i);
+//   i -= 1;
+// }
+
+// console.log(myArray);
