@@ -33,13 +33,35 @@
 //   labelCounter += 1;
 // }
 
-// * Example Game
-const content = document.querySelector('.content');
+// // * Example Game
+// const content = document.querySelector('.content');
 
-let markup = '';
+// let markup = '';
 
-for (let i = 1; i <= 9; i += 1) {
-  markup += '<div class="item"></div>';
+// for (let i = 1; i <= 9; i += 1) {
+//   markup += '<div class="item"></div>';
+// }
+
+// content.insertAdjacentHTML('beforeend', markup);
+
+const textRef = document.querySelector('.text');
+const containerRef = document.querySelector('.container');
+let numbersMoves = 0;
+let numbersText1 = 0;
+
+containerRef.insertAdjacentHTML('beforeend', '<p class="text1"></p>');
+
+window.addEventListener('mousemove', onMouseMove);
+
+window.addEventListener('mousemove', _.debounce(onMouseMoveThrottle, 300));
+
+function onMouseMove(evt) {
+  numbersMoves += 1;
+
+  textRef.textContent = numbersMoves;
 }
 
-content.insertAdjacentHTML('beforeend', markup);
+function onMouseMoveThrottle(evt) {
+  numbersText1 += 1;
+  document.querySelector('.text1').textContent = numbersText1;
+}
