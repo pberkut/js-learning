@@ -44,24 +44,76 @@
 
 // content.insertAdjacentHTML('beforeend', markup);
 
-const textRef = document.querySelector('.text');
-const containerRef = document.querySelector('.container');
-let numbersMoves = 0;
-let numbersText1 = 0;
+// * Example
+// const textRef = document.querySelector('.text');
+// const containerRef = document.querySelector('.container');
+// let numbersMoves = 0;
+// let numbersText1 = 0;
 
-containerRef.insertAdjacentHTML('beforeend', '<p class="text1"></p>');
+// containerRef.insertAdjacentHTML('beforeend', '<p class="text1"></p>');
 
-window.addEventListener('mousemove', onMouseMove);
+// window.addEventListener('mousemove', onMouseMove);
 
-window.addEventListener('mousemove', _.debounce(onMouseMoveThrottle, 300));
+// window.addEventListener('mousemove', _.throttle(onMouseMoveThrottle, 300));
 
-function onMouseMove(evt) {
-  numbersMoves += 1;
+// function onMouseMove(evt) {
+//   numbersMoves += 1;
 
-  textRef.textContent = numbersMoves;
+//   textRef.textContent = numbersMoves;
+// }
+
+// function onMouseMoveThrottle(evt) {
+//   numbersText1 += 1;
+//   document.querySelector('.text1').textContent = numbersText1;
+// }
+
+// * Example
+const tech = [
+  { label: 'HTML' },
+  { label: 'CSS' },
+  { label: 'JavaScript' },
+  { label: 'Node.js' },
+  { label: 'React' },
+  { label: 'Vue' },
+  { label: 'Next.js' },
+  { label: 'Mobx' },
+  { label: 'Redux' },
+  { label: 'React Router' },
+  { label: 'GraphQl' },
+  { label: 'PostgreSQL' },
+  { label: 'MongoDB' },
+];
+
+/*
+ * 1. Рендерим разметку элементов списка
+ * 2. Слушаем изменение фильтра
+ * 3. Фильтруем данные и рендерим новые элементы
+ */
+
+const refs = {
+  list: document.querySelector('.js-list'),
+  input: document.querySelector('#filter'),
+};
+
+refs.input.addEventListener('input', _.debounce(onFilterChange, 300));
+
+const listItemsMarkup = createListItemsMarkup(tech);
+populateList(listItemsMarkup);
+
+function createListItemsMarkup(items) {
+  return items.map(item => `<li>${item.label}</li>`).join('');
 }
 
-function onMouseMoveThrottle(evt) {
-  numbersText1 += 1;
-  document.querySelector('.text1').textContent = numbersText1;
+function onFilterChange(evt) {
+  console.log('INPUT');
+  const filter = evt.target.value.toLowerCase();
+
+  const filteredItems = tech.filter(t => t.label.toLowerCase().includes(filter));
+
+  const listItemsMarkup = createListItemsMarkup(filteredItems);
+  populateList(listItemsMarkup);
+}
+
+function populateList(markup) {
+  refs.list.innerHTML = markup;
 }
