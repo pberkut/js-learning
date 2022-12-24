@@ -2,9 +2,14 @@
   "name": "js-learning",
   "packageManager": "yarn@3.3.1",
   "source": "src/index.html",
+  "homepage": "https://github.com/pberkut/js-learning",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build"
+    "build": "parcel build src/index.html --public-url /js-learning"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pberkut/js-learning.git"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.8.2",
