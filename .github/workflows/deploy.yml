@@ -13,7 +13,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          yarn install --immutable --immutable-cache --check-cache
+          yarn install --immutable --immutable-cache
           yarn run build
 
       - name: Deploy 🚀
