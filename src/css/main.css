@@ -1,27 +1,17 @@
-body {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 1rem;
-    text-align: center;
-  }
-}
-
 .block--green {
   width: 20px;
   height: 20px;
   background-color: green;
   border-radius: 50%;
 }
+
 .block--orange {
   width: 20px;
   height: 20px;
   background-color: orange;
   border-radius: 50%;
 }
+
 .block--red {
   width: 20px;
   height: 20px;
@@ -40,4 +30,4 @@ body {
 
 .item-list-task-6:not(:last-child) {
   margin-bottom: 10px;
-}
+}/*# sourceMappingURL=main.css.map */

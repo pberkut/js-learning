@@ -354,3 +354,6 @@
 // }
 
 // console.log(myArray);
+
+// * Example
+console.log('start');

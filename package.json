@@ -1,0 +1,13 @@
+{
+  "name": "js-learning",
+  "packageManager": "yarn@3.3.1",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.2",
+    "parcel": "^2.8.2"
+  }
+}
