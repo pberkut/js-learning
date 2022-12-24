@@ -4,8 +4,8 @@
   "source": "src/index.html",
   "homepage": "https://github.com/pberkut/js-learning",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /js-learning"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /js-learning"
   },
   "repository": {
     "type": "git",
