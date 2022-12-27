@@ -918,6 +918,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@thednp/event-listener@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@thednp/event-listener@npm:1.0.4"
+  checksum: 4a56144aeedfdf40beb9ead4af72ea2a90309bd2c3fdc93a82bffa41bb3882749b3399d90e4629c31b386d07a14c09c2ad1d6016a41623c9f19b48f405bbdbab
+  languageName: node
+  linkType: hard
+
+"@thednp/shorty@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@thednp/shorty@npm:1.0.3"
+  checksum: 3e6042b2e9eceb5d8405d7f6c5838d943d9805b38af5a2cd925466090c813817d2f1607a8b87e6b8a3f30d94ffc3e90ddfcab41fca68836e87d185f7562c8030
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -1071,6 +1085,25 @@ __metadata:
   version: 1.0.0
   resolution: "boolbase@npm:1.0.0"
   checksum: 3e25c80ef626c3a3487c73dbfc70ac322ec830666c9ad915d11b701142fab25ec1e63eff2c450c74347acfd2de854ccde865cd79ef4db1683f7c7b046ea43bb0
+  languageName: node
+  linkType: hard
+
+"bootstrap.native@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "bootstrap.native@npm:4.2.0"
+  dependencies:
+    "@thednp/event-listener": ^1.0.4
+    "@thednp/shorty": ^1.0.3
+  checksum: ab0fdf7f0a3969b8be2cd53e4cc1db1eb4039934d61dbe3ba64e48a6f532ddb425b70785c1686feb62c8a90f16db6a979fdaf238b3ec4b8d83384d9d6e96b36c
+  languageName: node
+  linkType: hard
+
+"bootstrap@npm:^5.2.3":
+  version: 5.2.3
+  resolution: "bootstrap@npm:5.2.3"
+  peerDependencies:
+    "@popperjs/core": ^2.11.6
+  checksum: 0211805dec6a190c0911d142966df30fdb4b4139a04cc6c23dd83c6045ea3cb0a966b360ab2e701e7b3ad96ff01e05fdc0914be97b41bd876b11e457a8bdc6a3
   languageName: node
   linkType: hard
 
@@ -1900,6 +1933,8 @@ __metadata:
   resolution: "js-learning@workspace:."
   dependencies:
     "@parcel/transformer-sass": 2.8.2
+    bootstrap: ^5.2.3
+    bootstrap.native: ^4.2.0
     handlebars: ^4.7.7
     parcel: ^2.8.2
   languageName: unknown
