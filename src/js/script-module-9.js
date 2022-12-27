@@ -43,3 +43,41 @@
 // myWorker.onmessage = function (e) {
 //   console.log(e.data);
 // };
+
+// * Example setTimeout
+// const logger = time => {
+//   console.log(`Log times: ${time}`);
+// };
+
+// const timerId01 = setTimeout(logger, 1000, 1000);
+// const timerId02 = setTimeout(logger, 500, 500);
+
+// console.log(timerId01);
+// console.log(timerId02);
+
+// const shouldCancelTimer = Math.random() > 0.3;
+// console.log(shouldCancelTimer);
+
+// if (shouldCancelTimer) {
+//   clearTimeout(timerId02);
+// }
+
+// * Example setInterval
+// const logger = time => {
+//   console.log(`Log times: ${time}. ${Date.now()}`);
+// };
+
+// const intervalId01 = setInterval(logger, 2000, 2000);
+// const intervalId02 = setInterval(logger, 1000, 1000);
+
+// console.log(intervalId01);
+// console.log(intervalId02);
+
+// const shouldCancelInterval = Math.random() > 0.3;
+// console.log('Canceled interval:', shouldCancelInterval);
+
+// if (shouldCancelInterval) {
+//   clearInterval(intervalId02);
+// }
+
+// * Event loop
