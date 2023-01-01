@@ -49,7 +49,7 @@ function startGame(evt) {
 
     item.textContent = '';
 
-    createPromise(Number(level), '🔔', '💰', delay * i)
+    createPromise(Number(level), '✅', '❌', delay * i)
       .then(resp => {
         markField(item, resp);
         arrWin.push(resp);
@@ -62,10 +62,14 @@ function startGame(evt) {
         if (i === childrenLength - 1) {
           start.disabled = false;
         }
-        const result = arrWin.length === childrenLength || arrLose.length === childrenLength;
+        const resultWinner = arrWin.length === childrenLength;
+        const resultLose = arrLose.length === childrenLength;
 
-        if (result) {
+        if (resultWinner) {
           Notiflix.Notify.success('You are WINNER! ');
+        }
+        if (resultLose) {
+          Notiflix.Notify.failure('You are lose!');
         }
       });
   }
