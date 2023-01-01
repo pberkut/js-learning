@@ -1936,6 +1936,7 @@ __metadata:
     bootstrap: ^5.2.3
     bootstrap.native: ^4.2.0
     handlebars: ^4.7.7
+    notiflix: ^3.2.5
     parcel: ^2.8.2
   languageName: unknown
   linkType: soft
@@ -2406,6 +2407,13 @@ __metadata:
   version: 3.0.0
   resolution: "normalize-path@npm:3.0.0"
   checksum: 88eeb4da891e10b1318c4b2476b6e2ecbeb5ff97d946815ffea7794c31a89017c70d7f34b3c2ebf23ef4e9fc9fb99f7dffe36da22011b5b5c6ffa34f4873ec20
+  languageName: node
+  linkType: hard
+
+"notiflix@npm:^3.2.5":
+  version: 3.2.5
+  resolution: "notiflix@npm:3.2.5"
+  checksum: 384a02935f136cd4e08855178e943c13f425e319e94608f07f73838a7c238a12ace19f36c647137ff221b7f8dc9478b2ae3068764b1b2e8e4709e61ebb50a9af
   languageName: node
   linkType: hard
 
