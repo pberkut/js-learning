@@ -358,11 +358,94 @@
 // * Example
 // console.log('start');
 
-const myArr = [2, 3, 4, 5, 6];
-let total = 0;
-for (let i = 0; i < myArr.length; i++) {
-  total += myArr[i];
-  console.log(total);
-}
+// const myArr = [2, 3, 4, 5, 6];
+// let total = 0;
+// for (let i = 0; i < myArr.length; i++) {
+//   total += myArr[i];
+//   console.log(total);
+// }
 
-console.log(total);
+// console.log(total);
+
+// * Example
+// function multiplyAll(arr) {
+//   let product = 1;
+//   // Змініть код лише під цим рядком
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+//     for (let j = 0; j < arr[i].length; j++) {
+//       product *= arr[i][j];
+//       console.log(arr[i][j]);
+//     }
+//   }
+//   // Змініть код лише над цим рядком
+//   return product;
+// }
+
+// const result = multiplyAll([
+//   [1, 2],
+//   [3, 4],
+//   [5, 6, 7],
+// ]);
+
+// console.log(result);
+
+// * Example
+// const arr = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr[i].length; j++) {
+//     console.log(arr[i][j]);
+//   }
+// }
+
+// * Example do while
+// const myArray = [];
+// let i = 10;
+
+// do {
+//   myArray.push(i);
+//   i++;
+// } while (i < 5);
+
+// console.log(myArray);
+
+// * Example Рекурсия пример
+// const arr = [1, 2, 3, 4, 5];
+// const n = 4;
+
+// function multiply(arr, n) {
+//   let product = 1;
+//   for (let i = 0; i < n; i++) {
+//     product *= arr[i];
+//   }
+//   return product;
+// }
+
+// console.log(multiply(arr, 5));
+
+// // Рекурсия
+// function multiply(arr, n) {
+//   if (n <= 0) {
+//     return 1;
+//   } else {
+//     return multiply(arr, n - 1) * arr[n - 1];
+//   }
+// }
+
+// function sum(arr, n) {
+//   // Only change code below this line
+//   if (n <= 0) {
+//     return 0;
+//   } else {
+//     console.log(n);
+//     return sum(arr, n - 1) + arr[n - 1];
+//   }
+//   // Only change code above this line
+// }
+
+// console.log(sum([1, 2, 3], 3));
