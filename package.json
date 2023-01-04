@@ -11,6 +11,7 @@
     "url": "git+https://github.com/pberkut/js-learning.git"
   },
   "dependencies": {
+    "@inventory/parcel-plugin-handlebars": "^1.0.0",
     "bootstrap.native": "^4.2.0",
     "handlebars": "^4.7.7",
     "notiflix": "^3.2.5",
