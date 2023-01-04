@@ -14,8 +14,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "2.8.2",
     "parcel": "^2.8.2",
-    "parcel-plugin-handlebars-precompile": "^1.0.2",
-    "posthtml-include": "^1.7.4"
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
