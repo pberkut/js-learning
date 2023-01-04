@@ -510,3 +510,84 @@
 // console.log(lookUpProfile('Bob', 'number'));
 
 // * Example
+// console.log(Math.floor(Math.random() * 20));
+
+// console.time('start');
+// console.log('start');
+
+// let result = 0;
+
+// do {
+//   //   result = Math.floor(Math.random() * 20);
+//   //   result += 1;
+//   console.log(result);
+// } while (result < 15);
+
+// console.log('End');
+// console.timeEnd('start');
+
+// let n = 100;
+
+// function randomRange(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// for (let i = 0; i < n; i += 1) {
+//   if (randomRange(1, n) === 10) {
+//     console.log(`${i} :`, randomRange(1, n));
+//     break;
+//   }
+// }
+
+// * Example
+// function convertToInteger(str) {
+//   return parseInt(str);
+// }
+
+// convertToInteger('56');
+
+// console.log(convertToInteger('056'));
+// console.log(convertToInteger('016'));
+// console.log(convertToInteger('000160'));
+// console.log(convertToInteger('000s160'));
+// console.log(convertToInteger('a000s160'));
+
+//  * Example Ternary
+// function checkSign(num) {
+//   return num === 0 ? 'zero' : num > 0 ? 'positive' : 'negative';
+// }
+
+// checkSign(10);
+
+// console.log(checkSign(-10));
+// console.log(checkSign(10));
+// console.log(checkSign(0));
+// console.log(checkSign(12));
+// console.log(checkSign(12));
+
+// * Example recursion
+// function countup(n) {
+//   if (n < 1) {
+//     return [];
+//   } else {
+//     const countArray = countup(n - 1);
+//     countArray.push(n);
+//     return countArray;
+//   }
+// }
+// console.log(countup(10));
+
+// Only change code below this line
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countdown(n - 1);
+    countArray.unshift(n);
+
+    return countArray;
+  }
+}
+// Only change code above this line
+
+console.log(countdown(10));
