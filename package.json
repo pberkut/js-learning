@@ -12,11 +12,13 @@
   },
   "dependencies": {
     "bootstrap.native": "^4.2.0",
+    "handlebars": "^4.7.7",
     "notiflix": "^3.2.5",
     "parcel": "^2.8.2"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-reporter-clean-dist": "^1.0.4"
   }
 }

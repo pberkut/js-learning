@@ -1,4 +1,4 @@
-// import markupPokemonTpl from './template/pokemon.hbs';
+import markupPokemonTpl from './template/pokemon.hbs';
 
 const container = document.querySelector('.js-container');
 
