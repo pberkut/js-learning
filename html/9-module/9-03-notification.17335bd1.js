@@ -1,2 +1,2 @@
 const NOTIFICATION_DELAY=3e3;let timeoutId=null;const refs={notification:document.querySelector(".js-alert")};function onNotificationClick(){hideNotification(),clearTimeout(timeoutId)}function showNotification(){refs.notification.classList.add("is-visible"),timeoutId=setTimeout((()=>{console.log("Закрываем алерт автоматически чтоб не висел"),hideNotification()}),3e3)}function hideNotification(){refs.notification.classList.remove("is-visible")}refs.notification.addEventListener("click",onNotificationClick),showNotification();
-//# sourceMappingURL=9-03-notification.107e36ef.js.map
+//# sourceMappingURL=9-03-notification.17335bd1.js.map
