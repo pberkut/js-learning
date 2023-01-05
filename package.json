@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "homepage": "https://github.com/pberkut/js-learning",
   "scripts": {
-    "start": "parcel src/**/*.html",
+    "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /js-learning"
   },
   "repository": {
@@ -11,11 +11,12 @@
     "url": "git+https://github.com/pberkut/js-learning.git"
   },
   "dependencies": {
-    "@inventory/parcel-plugin-handlebars": "^1.0.0",
+    "bootstrap": "^5.2.3",
     "bootstrap.native": "^4.2.0",
     "handlebars": "^4.7.7",
     "notiflix": "^3.2.5",
-    "parcel": "^2.8.2"
+    "parcel": "^2.8.2",
+    "parcel-transformer-hbs": "^1.0.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
