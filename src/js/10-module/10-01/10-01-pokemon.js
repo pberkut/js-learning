@@ -1,7 +1,7 @@
 import throttle from 'lodash.throttle';
 import Notiflix from 'notiflix';
-import markupPokemonTpl from './templates/pokemon-card.hbs';
-import API from './api-service-pokemon';
+import markupPokemonTpl from '../10-01/templates/pokemon-card.hbs';
+import API from '../10-01/api-service-pokemon';
 
 const container = document.querySelector('.js-container');
 const searchForm = document.querySelector('.form');
