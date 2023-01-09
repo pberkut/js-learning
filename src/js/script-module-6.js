@@ -578,16 +578,31 @@
 // console.log(countup(10));
 
 // Only change code below this line
-function countdown(n) {
-  if (n < 1) {
+// function countdown(n) {
+//   if (n < 1) {
+//     return [];
+//   } else {
+//     const countArray = countdown(n - 1);
+//     countArray.unshift(n);
+
+//     return countArray;
+//   }
+// }
+// // Only change code above this line
+
+// console.log(countdown(10));
+
+// * Example
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
     return [];
   } else {
-    const countArray = countdown(n - 1);
-    countArray.unshift(n);
-
-    return countArray;
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
   }
 }
-// Only change code above this line
 
-console.log(countdown(10));
+console.log(rangeOfNumbers(1, 5));
+console.log(rangeOfNumbers(6, 9));
+console.log(rangeOfNumbers(4, 4));
