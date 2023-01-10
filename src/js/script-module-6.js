@@ -593,16 +593,78 @@
 // console.log(countdown(10));
 
 // * Example
-function rangeOfNumbers(startNum, endNum) {
-  if (endNum < startNum) {
-    return [];
-  } else {
-    const numbers = rangeOfNumbers(startNum, endNum - 1);
-    numbers.push(endNum);
-    return numbers;
-  }
-}
+// function rangeOfNumbers(startNum, endNum) {
+//   if (endNum < startNum) {
+//     return [];
+//   } else {
+//     const numbers = rangeOfNumbers(startNum, endNum - 1);
+//     numbers.push(endNum);
+//     return numbers;
+//   }
+// }
 
-console.log(rangeOfNumbers(1, 5));
-console.log(rangeOfNumbers(6, 9));
-console.log(rangeOfNumbers(4, 4));
+// console.log(rangeOfNumbers(1, 5));
+// console.log(rangeOfNumbers(6, 9));
+// console.log(rangeOfNumbers(4, 4));
+
+//  * Example
+// var numArray = [];
+// for (var i = 0; i < 3; i++) {
+//   numArray.push(i);
+// }
+// console.log(numArray);
+// console.log(i);
+
+// * example
+// var printNumTwo;
+// for (var i = 0; i < 3; i++) {
+//   if (i === 2) {
+//     printNumTwo = function () {
+//       return i;
+//     };
+//   }
+// }
+// console.log(printNumTwo());
+
+// * Example
+// function checkScope() {
+//   let i = 'function scope';
+//   if (true) {
+//     let i = 'block scope';
+//     console.log('Block scope i is: ', i);
+//   }
+//   console.log('Function scope i is: ', i);
+//   return i;
+// }
+
+// console.log(checkScope());
+
+// * Example
+
+// let obj = {
+//   name: 'FreeCodeCamp',
+//   review: 'Awesome',
+// };
+// Object.freeze(obj);
+// obj.review = 'bad';
+// obj.newProp = 'Test';
+// console.log(obj);
+
+// * Example
+function freezeObj() {
+  const MATH_CONSTANTS = {
+    PI: 3.14,
+  };
+  // Only change code below this line
+  Object.freeze(MATH_CONSTANTS);
+  // Only change code above this line
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch (ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+
+console.log(freezeObj());
