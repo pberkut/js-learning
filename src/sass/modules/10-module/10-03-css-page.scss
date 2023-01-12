@@ -1,0 +1,45 @@
+h2 {
+  margin: 5 0 5 10;
+  font-size: 16px;
+}
+
+h3 {
+  margin: 5 0 5 10;
+  font-size: 14;
+}
+
+button {
+  width: 80px;
+}
+
+.list {
+  // padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  color: #09094b;
+  border: 1px solid black;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.js-control-btns {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.u-vh {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
