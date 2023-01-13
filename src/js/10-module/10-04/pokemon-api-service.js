@@ -11,7 +11,7 @@ export default class PokemonApiService {
   fetchPokemons() {
     const endPoint = 'pokemon';
     const id = '1';
-    const pagination = 10;
+    const pagination = 20;
     const url = `${BASE_URL}/${endPoint}`;
 
     return fetch(`${url}?limit=${pagination}`, options)

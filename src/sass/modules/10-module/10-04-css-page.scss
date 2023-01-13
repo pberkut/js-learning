@@ -3,6 +3,40 @@ img {
   max-width: 200px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   border: 1px solid black;
+  flex-basis: calc((100% - 30px * (5 - 1)) / 5);
+
+  background-color: rgba(254, 255, 213, 0.699);
+
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-img-top {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  padding-left: 10px;
+}
+
+.list-group-item {
+  padding-left: 5px;
 }
