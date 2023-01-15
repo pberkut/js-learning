@@ -29,8 +29,8 @@ function onLoad(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       console.log('Observer');
-      pokemonApiService.offsetNum += 5;
-      //   pokemonApiService.increment(20);
+      // pokemonApiService.offsetNum += 5;
+      pokemonApiService.increment(5);
       start();
     }
   });
