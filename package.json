@@ -4,7 +4,8 @@
   "homepage": "https://github.com/pberkut/js-learning",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /js-learning"
+    "build": "parcel build src/*.html --public-url /js-learning",
+    "server": "json-server --watch db.json"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "json-server": "^0.17.1",
     "parcel-reporter-clean-dist": "^1.0.4"
   }
 }
