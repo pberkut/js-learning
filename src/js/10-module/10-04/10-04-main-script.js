@@ -6,8 +6,8 @@ const containerRef = document.querySelector('.js-container');
 const guard = document.querySelector('.js-guard');
 const options = {
   root: null,
-  rootMargin: '400px',
-  threshold: 1.0,
+  rootMargin: '500px',
+  threshold: 0,
 };
 
 let observer = new IntersectionObserver(onLoad, options);
@@ -31,7 +31,12 @@ function onLoad(entries, observer) {
       console.log('Observer');
       // pokemonApiService.offsetNum += 5;
       pokemonApiService.increment(5);
-      start();
+      pokemonApiService
+        .fetchPokemons()
+        .then(getPokemons)
+        .catch(err => {
+          Notiflix.Notify.failure(err);
+        });
     }
   });
 }

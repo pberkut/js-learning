@@ -5,7 +5,7 @@ const options = {
 
 export default class PokemonApiService {
   constructor() {
-    this.offset = 5;
+    this.offset = 0;
   }
 
   fetchPokemons() {
@@ -14,7 +14,7 @@ export default class PokemonApiService {
     // const offset = 20;
     const url = `${BASE_URL}/${endPoint}`;
 
-    return fetch(`${url}?limit=10&offset=${this.offset}`, options).then(resp => {
+    return fetch(`${url}?limit=20&offset=${this.offset}`, options).then(resp => {
       if (!resp.ok) {
         throw new Error(resp.statusText);
       }
