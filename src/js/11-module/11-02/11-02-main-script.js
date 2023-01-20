@@ -1,5 +1,26 @@
+//
+
 const BASE_URL = 'https://jsonplaceholder.typicode.com/posts';
 
+const refs = {
+  form: document.querySelector('.js-form'),
+  container: document.querySelector('.js-container'),
+};
+
+refs.form.addEventListener('submit', onSubmit);
+
+function onSubmit(evt) {
+  evt.preventDefault();
+
+  const { title, message } = evt.currentTarget.elements;
+
+  const myPost = {
+    title: title.value,
+    body: message.value,
+  };
+
+  createPost(myPost).then(console.log).catch(console.log);
+}
 // getPost(1).then(console.log).catch(console.log);
 // getAllPost().then(console.log).catch(console.log);
 // createPost().then(console.log).catch(console.log);
@@ -14,11 +35,11 @@ function getPost(postId) {
   return fetch(`${BASE_URL}/${postId}`).then(r => r.json());
 }
 
-function createPost() {
-  const myPost = {
-    title: 'First title',
-    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim perferendis earum, magni nesciunt quod unde eligendi repellendus, maiores cumque cupiditate praesentium, harum veritatis aliquam delectus hic quibusdam! Quo, facere!',
-  };
+function createPost(myPost) {
+  //   const myPost = {
+  //     title: 'First title',
+  //     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim perferendis earum, magni nesciunt quod unde eligendi repellendus, maiores cumque cupiditate praesentium, harum veritatis aliquam delectus hic quibusdam! Quo, facere!',
+  //   };
 
   const options = {
     method: 'POST',
