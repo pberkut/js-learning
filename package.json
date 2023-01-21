@@ -23,6 +23,8 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "axios": "^1.2.3",
+    "buffer": "^5.7.1",
     "json-server": "^0.17.1",
     "parcel-reporter-clean-dist": "^1.0.4"
   }
