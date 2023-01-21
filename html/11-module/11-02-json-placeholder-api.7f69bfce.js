@@ -1,2 +1,0 @@
-const e="https://jsonplaceholder.typicode.com/posts";({form:document.querySelector(".js-form"),container:document.querySelector(".js-container")}).form.addEventListener("submit",(function(t){t.preventDefault();const{title:o,message:n}=t.currentTarget.elements;(function(t){const o={method:"POST",body:JSON.stringify(t),headers:{"content-type":"application/json; charset=utf-8"}};return fetch(e,o).then((e=>e.json()))})({title:o.value,body:n.value}).then(console.log).catch(console.log)}));
-//# sourceMappingURL=11-02-json-placeholder-api.7f69bfce.js.map
