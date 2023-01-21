@@ -651,20 +651,43 @@
 // console.log(obj);
 
 // * Example
-function freezeObj() {
-  const MATH_CONSTANTS = {
-    PI: 3.14,
-  };
-  // Only change code below this line
-  Object.freeze(MATH_CONSTANTS);
-  // Only change code above this line
-  try {
-    MATH_CONSTANTS.PI = 99;
-  } catch (ex) {
-    console.log(ex);
-  }
-  return MATH_CONSTANTS.PI;
-}
-const PI = freezeObj();
+// function freezeObj() {
+//   const MATH_CONSTANTS = {
+//     PI: 3.14,
+//   };
+//   // Only change code below this line
+//   Object.freeze(MATH_CONSTANTS);
+//   // Only change code above this line
+//   try {
+//     MATH_CONSTANTS.PI = 99;
+//   } catch (ex) {
+//     console.log(ex);
+//   }
+//   return MATH_CONSTANTS.PI;
+// }
+// const PI = freezeObj();
 
-console.log(freezeObj());
+// console.log(freezeObj());
+
+// * Example
+
+// debugger;
+// const result = [] + 1 + 2; // concztznation
+
+// const a = true;
+// const b = true;
+
+// console.log(!!(a && b));
+// console.log(a && b);
+// debugger;
+
+// let name = 'пупкин'.replace('п', 'д');
+
+// f.call(null);
+
+// function f() {
+//   alert(this);
+// }
+
+const a = (1, 5 - 1) * 2;
+console.log(a);
