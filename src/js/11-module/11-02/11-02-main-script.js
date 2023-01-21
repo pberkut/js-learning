@@ -7,8 +7,8 @@ const refs = {
   container: document.querySelector('.js-container'),
 };
 
+// debugger;
 refs.form.addEventListener('submit', onSubmit);
-
 function onSubmit(evt) {
   evt.preventDefault();
 
@@ -18,6 +18,14 @@ function onSubmit(evt) {
     title: title.value,
     body: message.value,
   };
+
+  let y = '12';
+  let r = 10;
+
+  const x = y + r;
+  console.table(x);
+  // debugger;
+  // console.trace();
 
   createPost(myPost).then(console.log).catch(console.log);
 }

@@ -6,7 +6,11 @@ import API from '../10-01/api-service-pokemon';
 const container = document.querySelector('.js-container');
 const searchForm = document.querySelector('.form');
 const searchInput = document.querySelector('[name="query"]');
+
 window.addEventListener('keydown', onPresskeyEscape);
+searchForm.addEventListener('submit', e => {
+  e.preventDefault();
+});
 
 searchInput.addEventListener('input', throttle(onSearch, 300));
 

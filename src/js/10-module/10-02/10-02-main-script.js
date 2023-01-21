@@ -4,7 +4,7 @@ const formRef = document.querySelector('[name=form]');
 const container = document.querySelector('.js-container');
 
 // const name = 'ukraine';
-
+formRef.addEventListener('submit', e => e.preventDefault());
 formRef.addEventListener('input', debounce(onSearch, 300));
 
 function onSearch(e) {

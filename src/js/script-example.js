@@ -1564,3 +1564,11 @@
 // console.log(message);
 
 // ----------------------------
+
+// const obj = [
+//   { id: 1, name: 'Olde', age: 30 },
+//   { id: 2, name: 'Makron', age: 50 },
+//   { id: 3, name: 'Petro', age: 60 },
+// ];
+
+// console.table(obj);
