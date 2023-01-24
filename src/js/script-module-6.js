@@ -698,3 +698,6 @@
 // const styles = `padding: ${spacing}; background-color: darkblue; color: white; font-style:
 //          italic; border: ${spacing} solid crimson; font-size: 2em;`;
 // console.log('%cVariety is the spice of life', styles);
+
+const result = 5 + 15;
+console.warn(result);
