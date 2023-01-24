@@ -689,5 +689,12 @@
 //   alert(this);
 // }
 
-const a = (1, 5 - 1) * 2;
-console.log(a);
+// const a = (1, 5 - 1) * 2;
+// console.log(a);
+
+// * Exapmle
+
+// const spacing = '5px';
+// const styles = `padding: ${spacing}; background-color: darkblue; color: white; font-style:
+//          italic; border: ${spacing} solid crimson; font-size: 2em;`;
+// console.log('%cVariety is the spice of life', styles);
