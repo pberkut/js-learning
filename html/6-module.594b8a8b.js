@@ -1,2 +1,0 @@
-let e=new class{constructor(){this.items=[]}enqueue(e){return this.items.push(e)}dequeue(){if(this.items.length>0)return this.items.shift()}peek(){return this.items[this.items.length-1]}isEmpty(){return 0==this.items.length}size(){return this.items.length}clear(){this.items=[]}};e.enqueue(1),e.enqueue(2),e.enqueue(4),e.enqueue(8),console.log(e.items),e.dequeue(),console.log(e.items),console.log(e.peek()),console.log(e.isEmpty()),console.log(e.size()),e.clear(),console.log(e.items);
-//# sourceMappingURL=6-module.594b8a8b.js.map
