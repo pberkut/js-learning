@@ -764,17 +764,28 @@
 // console.log(queue.items);
 
 // * Example
-var buffer = new ArrayBuffer(8);
-var view = new Int32Array(buffer);
+// var buffer = new ArrayBuffer(8);
+// var view = new Int32Array(buffer);
 
-let a = 5;
-let b = 'asdf';
-let c = a + b;
+// let a = 5;
+// let b = 'asdf';
+// let c = a + b;
 
-// if you want to see the value of c
-console.log(c);
+// // if you want to see the value of c
+// console.log(c);
 
-// then do other operations
-if (c) {
-  // do something
+// // then do other operations
+// if (c) {
+//   // do something
+// }
+
+// * Example
+
+var petName = 'Rocky'; //Global Variable
+myFunction();
+
+function myFunction() {
+  document.getElementById('geeks').innerHTML = typeof petName + '- ' + 'My pet name is ' + petName;
 }
+
+document.getElementById('Geeks').innerHTML = typeof petName + '- ' + 'My pet name is ' + petName;
