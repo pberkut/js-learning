@@ -781,11 +781,59 @@
 
 // * Example
 
-var petName = 'Rocky'; //Global Variable
-myFunction();
+// var petName = 'Rocky'; //Global Variable
+// myFunction();
 
-function myFunction() {
-  document.getElementById('geeks').innerHTML = typeof petName + '- ' + 'My pet name is ' + petName;
+// function myFunction() {
+//   document.getElementById('geeks').innerHTML = typeof petName + '- ' + 'My pet name is ' + petName;
+// }
+
+// document.getElementById('Geeks').innerHTML = typeof petName + '- ' + 'My pet name is ' + petName;
+
+// addElements function to add elements as options
+function addElements(dd, array) {
+  for (i = 0; i < array.length; i++) {
+    var opt = document.createElement('option');
+    opt.text = array[i];
+    opt.value = array[i];
+    dd.add(opt);
+  }
 }
-
-document.getElementById('Geeks').innerHTML = typeof petName + '- ' + 'My pet name is ' + petName;
+//  removeElements function to remove elements in dropdown city while changing the states
+function removeElements(dd) {
+  for (i = dd.options.length - 1; i >= 0; i--) {
+    dd.remove(i);
+  }
+}
+// function to fill states
+function fillState() {
+  var state = ['-Select-', 'Madhya Pradesh', 'Haryana', 'Gujrat', 'Himachal'];
+  var st = document.getElementById('st');
+  addElements(st, state);
+}
+// functions to fill city dropdown after changing the state values
+function fillCity() {
+  var st = document.getElementById('st');
+  var ct = document.getElementById('ct');
+  var i = st.selectedIndex;
+  removeElements(ct);
+  //switch cases according to the state values
+  switch (i) {
+    case 1:
+      var mp = ['-Select-', 'Gwalior', 'Bhopal', 'Indore', 'Ujjain'];
+      addElements(ct, mp);
+      break;
+    case 2:
+      var hr = ['-Select-', 'Rohtak', 'Faridabad', 'Sonipat', 'Panipat'];
+      addElements(ct, hr);
+      break;
+    case 3:
+      var gj = ['-Select-', 'Ahemdabad', 'Surat', 'Gandhinagar', 'Rajkot'];
+      addElements(ct, gj);
+      break;
+    case 4:
+      var hp = ['-Select-', 'Dharamshala', 'Shimla', 'kasauli', 'Nahan'];
+      addElements(ct, hp);
+      break;
+  }
+}
