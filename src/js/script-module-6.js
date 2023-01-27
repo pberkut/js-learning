@@ -790,50 +790,79 @@
 
 // document.getElementById('Geeks').innerHTML = typeof petName + '- ' + 'My pet name is ' + petName;
 
-// addElements function to add elements as options
-function addElements(dd, array) {
-  for (i = 0; i < array.length; i++) {
-    var opt = document.createElement('option');
-    opt.text = array[i];
-    opt.value = array[i];
-    dd.add(opt);
-  }
+// // addElements function to add elements as options
+// function addElements(dd, array) {
+//   for (i = 0; i < array.length; i++) {
+//     var opt = document.createElement('option');
+//     opt.text = array[i];
+//     opt.value = array[i];
+//     dd.add(opt);
+//   }
+// }
+// //  removeElements function to remove elements in dropdown city while changing the states
+// function removeElements(dd) {
+//   for (i = dd.options.length - 1; i >= 0; i--) {
+//     dd.remove(i);
+//   }
+// }
+// // function to fill states
+// function fillState() {
+//   var state = ['-Select-', 'Madhya Pradesh', 'Haryana', 'Gujrat', 'Himachal'];
+//   var st = document.getElementById('st');
+//   addElements(st, state);
+// }
+// // functions to fill city dropdown after changing the state values
+// function fillCity() {
+//   var st = document.getElementById('st');
+//   var ct = document.getElementById('ct');
+//   var i = st.selectedIndex;
+//   removeElements(ct);
+//   //switch cases according to the state values
+//   switch (i) {
+//     case 1:
+//       var mp = ['-Select-', 'Gwalior', 'Bhopal', 'Indore', 'Ujjain'];
+//       addElements(ct, mp);
+//       break;
+//     case 2:
+//       var hr = ['-Select-', 'Rohtak', 'Faridabad', 'Sonipat', 'Panipat'];
+//       addElements(ct, hr);
+//       break;
+//     case 3:
+//       var gj = ['-Select-', 'Ahemdabad', 'Surat', 'Gandhinagar', 'Rajkot'];
+//       addElements(ct, gj);
+//       break;
+//     case 4:
+//       var hp = ['-Select-', 'Dharamshala', 'Shimla', 'kasauli', 'Nahan'];
+//       addElements(ct, hp);
+//       break;
+//   }
+// }
+
+//  * Example CAULATOR
+
+// program to create a simple calculator using the if...else...if in JavaScript.
+// take the operator from the user through prompt box in JavaScript.
+const operator = prompt('Enter operator to perform the calculation ( either +, -, * or / ): ');
+
+// accept the number from the user through prompt box
+const number1 = parseFloat(prompt('Enter the first number: '));
+const number2 = parseFloat(prompt('Enter the second number: '));
+
+let result; // declaration of the variable.
+
+// use if, elseif and else keyword to define the calculator condition in JavaScript.
+if (operator == '+') {
+  // use + (addition) operator to add two numbers
+  result = number1 + number2;
+} else if (operator == '-') {
+  // use -  (subtraction) operator to subtract two numbers
+  result = number1 - number2;
+} else if (operator == '*') {
+  // use * (multiplication) operator to multiply two numbers
+  result = number1 * number2;
+} else {
+  result = number1 / number2; // use / (division) operator to divide two numbers
 }
-//  removeElements function to remove elements in dropdown city while changing the states
-function removeElements(dd) {
-  for (i = dd.options.length - 1; i >= 0; i--) {
-    dd.remove(i);
-  }
-}
-// function to fill states
-function fillState() {
-  var state = ['-Select-', 'Madhya Pradesh', 'Haryana', 'Gujrat', 'Himachal'];
-  var st = document.getElementById('st');
-  addElements(st, state);
-}
-// functions to fill city dropdown after changing the state values
-function fillCity() {
-  var st = document.getElementById('st');
-  var ct = document.getElementById('ct');
-  var i = st.selectedIndex;
-  removeElements(ct);
-  //switch cases according to the state values
-  switch (i) {
-    case 1:
-      var mp = ['-Select-', 'Gwalior', 'Bhopal', 'Indore', 'Ujjain'];
-      addElements(ct, mp);
-      break;
-    case 2:
-      var hr = ['-Select-', 'Rohtak', 'Faridabad', 'Sonipat', 'Panipat'];
-      addElements(ct, hr);
-      break;
-    case 3:
-      var gj = ['-Select-', 'Ahemdabad', 'Surat', 'Gandhinagar', 'Rajkot'];
-      addElements(ct, gj);
-      break;
-    case 4:
-      var hp = ['-Select-', 'Dharamshala', 'Shimla', 'kasauli', 'Nahan'];
-      addElements(ct, hp);
-      break;
-  }
-}
+
+// display the result of the Calculator
+window.alert(' Result is' + result);
