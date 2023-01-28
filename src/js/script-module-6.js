@@ -841,28 +841,41 @@
 //  * Example CAULATOR
 
 // program to create a simple calculator using the if...else...if in JavaScript.
-// take the operator from the user through prompt box in JavaScript.
-const operator = prompt('Enter operator to perform the calculation ( either +, -, * or / ): ');
+// // take the operator from the user through prompt box in JavaScript.
+// const operator = prompt('Enter operator to perform the calculation ( either +, -, * or / ): ');
 
-// accept the number from the user through prompt box
-const number1 = parseFloat(prompt('Enter the first number: '));
-const number2 = parseFloat(prompt('Enter the second number: '));
+// // accept the number from the user through prompt box
+// const number1 = parseFloat(prompt('Enter the first number: '));
+// const number2 = parseFloat(prompt('Enter the second number: '));
 
-let result; // declaration of the variable.
+// let result; // declaration of the variable.
 
-// use if, elseif and else keyword to define the calculator condition in JavaScript.
-if (operator == '+') {
-  // use + (addition) operator to add two numbers
-  result = number1 + number2;
-} else if (operator == '-') {
-  // use -  (subtraction) operator to subtract two numbers
-  result = number1 - number2;
-} else if (operator == '*') {
-  // use * (multiplication) operator to multiply two numbers
-  result = number1 * number2;
-} else {
-  result = number1 / number2; // use / (division) operator to divide two numbers
-}
+// // use if, elseif and else keyword to define the calculator condition in JavaScript.
+// if (operator == '+') {
+//   // use + (addition) operator to add two numbers
+//   result = number1 + number2;
+// } else if (operator == '-') {
+//   // use -  (subtraction) operator to subtract two numbers
+//   result = number1 - number2;
+// } else if (operator == '*') {
+//   // use * (multiplication) operator to multiply two numbers
+//   result = number1 * number2;
+// } else {
+//   result = number1 / number2; // use / (division) operator to divide two numbers
+// }
 
-// display the result of the Calculator
-window.alert(' Result is' + result);
+// // display the result of the Calculator
+// window.alert(' Result is' + result);
+
+// x = 10;
+// y = 15;
+// z = x + y;
+// console.log(z);
+// console.log(a);//a is not intialized
+/* 
+x = 10;
+y = 15;
+z = x + y;
+debugger;
+document.write(z);
+document.write(a); */
