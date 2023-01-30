@@ -879,3 +879,64 @@ z = x + y;
 debugger;
 document.write(z);
 document.write(a); */
+
+//  * Example
+// // debugger
+// const myConcat = (arr1, arr2) => arr1.concat(arr2);
+// console.log(myConcat([1, 2], [3, 4, 5]));
+// debugger
+// const p = 1;
+
+// * Example
+// function howMany(...args) {
+//     console.warn(args);
+//     debugger
+//     return "You have passed " + args.length + " arguments.";
+//   }
+//   console.log(howMany(0, 1, 2));
+//   console.log(howMany("string", null, [1, 2, 3], { }));
+//   debugger
+
+// * Example
+// const sum = (...args) => args.reduce((a, b) => a + b, 0);
+
+// const x = sum(1,2,3,4)
+// debugger
+
+// * Example
+//     var arr = [6, 89, 3, 45];
+// var maximus = Math.max.apply(null, arr);
+// debugger
+
+// * Example
+// let a = 8, b = 6;
+// [a, b] = [b, a];
+// debugger
+
+// * Example
+// debugger;
+
+// function removeFirstTwo(list) {
+//     // Only change code below this line
+//     const [a, b, ...shorterList] = list;
+//     // Only change code above this line
+//     return shorterList;
+//   }
+  
+//   const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   const sourceWithoutFirstTwo = removeFirstTwo(source);
+
+// * Example
+const stats = {
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
+  };
+  
+  // Only change code below this line
+  const half = ({min, max}) => (max + min) / 2.0; 
+  
+  // Only change code above this line
