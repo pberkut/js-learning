@@ -927,16 +927,32 @@ document.write(a); */
 //   const sourceWithoutFirstTwo = removeFirstTwo(source);
 
 // * Example
-const stats = {
-    max: 56.78,
-    standard_deviation: 4.34,
-    median: 34.54,
-    mode: 23.87,
-    min: -0.75,
-    average: 35.85
-  };
+// const stats = {
+//     max: 56.78,
+//     standard_deviation: 4.34,
+//     median: 34.54,
+//     mode: 23.87,
+//     min: -0.75,
+//     average: 35.85
+//   };
   
-  // Only change code below this line
-  const half = ({min, max}) => (max + min) / 2.0; 
+//   // Only change code below this line
+//   const half = ({min, max}) => (max + min) / 2.0; 
   
-  // Only change code above this line
+//   // Only change code above this line
+
+// * Example
+class ToDoClass {
+    constructor() {
+      this.tasks = JSON.parse(localStorage.getItem('TASKS'));
+      if(!this.tasks) {
+        this.tasks = [
+          {task: 'Go to Dentist', isComplete: false},
+          {task: 'Do Gardening', isComplete: true},
+          {task: 'Renew Library Account', isComplete: false},
+        ];
+      }
+
+      this.loadTasks();
+      this.addEventListeners();
+    }}
