@@ -942,17 +942,17 @@ document.write(a); */
 //   // Only change code above this line
 
 // * Example
-class ToDoClass {
-    constructor() {
-      this.tasks = JSON.parse(localStorage.getItem('TASKS'));
-      if(!this.tasks) {
-        this.tasks = [
-          {task: 'Go to Dentist', isComplete: false},
-          {task: 'Do Gardening', isComplete: true},
-          {task: 'Renew Library Account', isComplete: false},
-        ];
-      }
+// class ToDoClass {
+//     constructor() {
+//       this.tasks = JSON.parse(localStorage.getItem('TASKS'));
+//       if(!this.tasks) {
+//         this.tasks = [
+//           {task: 'Go to Dentist', isComplete: false},
+//           {task: 'Do Gardening', isComplete: true},
+//           {task: 'Renew Library Account', isComplete: false},
+//         ];
+//       }
 
-      this.loadTasks();
-      this.addEventListeners();
-    }}
+//       this.loadTasks();
+//       this.addEventListeners();
+//     }}
