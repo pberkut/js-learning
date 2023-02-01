@@ -958,28 +958,64 @@ document.write(a); */
 //     }}
 
 // * Example
-let SSL_KEY = __dirname + '/certs/key.pem';
-let SSL_CERT = __dirname + '/certs/certificate.pem';
-let MONGOURL = 'mongodb://admin:admin123@ds241055.mlab.com:41055/iotfwjs';
+// let SSL_KEY = __dirname + '/certs/key.pem';
+// let SSL_CERT = __dirname + '/certs/certificate.pem';
+// let MONGOURL = 'mongodb://admin:admin123@ds241055.mlab.com:41055/iotfwjs';
 
-module.exports = {
-    id: 'broker',
-    stats: false,
-    port: 8443,
-    logger: {
-        name: 'iotfwjs',
-        level: 'debug'
-    },
-    secure: {
-        keyPath: SSL_KEY,
-        certPath: SSL_CERT,
-    },
-    backend: {
-        type: 'mongodb',
-        url: MONGOURL
-    },
-    persistence: {
-        factory: 'mongo',
-        url: MONGOURL
+// module.exports = {
+//     id: 'broker',
+//     stats: false,
+//     port: 8443,
+//     logger: {
+//         name: 'iotfwjs',
+//         level: 'debug'
+//     },
+//     secure: {
+//         keyPath: SSL_KEY,
+//         certPath: SSL_CERT,
+//     },
+//     backend: {
+//         type: 'mongodb',
+//         url: MONGOURL
+//     },
+//     persistence: {
+//         factory: 'mongo',
+//         url: MONGOURL
+//     }
+// };
+
+// Example
+var config = require('./config.js');
+var mqtt = require('mqtt');
+var GetMac = require('getmac');
+
+var client = mqtt.connect({
+    port: config.mqtt.port,
+    protocol: 'mqtts',
+    host: config.mqtt.host,
+    clientId: config.mqtt.clientId,
+    reconnectPeriod: 1000,
+    username: config.mqtt.clientId,
+    password: config.mqtt.clientId,
+    keepalive: 300,
+    rejectUnauthorized: false
+});
+
+client.on('connect', function() {
+    client.subscribe('rpi');
+    GetMac.getMac(function(err, macAddress) {
+        if (err) throw err;
+        client.publish('api-engine', macAddress);
+    });
+});
+
+client.on('message', function(topic, message) {
+    // message is Buffer
+    // console.log('Topic >> ', topic);
+    // console.log('Message >> ', message.toString());
+    if (topic === 'rpi') {
+        console.log('API Engine Response >> ', message.toString());
+    } else {
+        console.log('Unknown topic', topic);
     }
-};
+});
