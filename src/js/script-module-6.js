@@ -922,7 +922,7 @@ document.write(a); */
 //     // Only change code above this line
 //     return shorterList;
 //   }
-  
+
 //   const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //   const sourceWithoutFirstTwo = removeFirstTwo(source);
 
@@ -935,10 +935,10 @@ document.write(a); */
 //     min: -0.75,
 //     average: 35.85
 //   };
-  
+
 //   // Only change code below this line
-//   const half = ({min, max}) => (max + min) / 2.0; 
-  
+//   const half = ({min, max}) => (max + min) / 2.0;
+
 //   // Only change code above this line
 
 // * Example
@@ -1020,7 +1020,7 @@ document.write(a); */
 //     }
 // });
 
-// * Example 
+// * Example
 // let SSL_KEY = __dirname + '/certs/key.pem';
 // let SSL_CERT = __dirname + '/certs/certificate.pem';
 // let MONGOURL = 'mongodb://admin:admin123@ds125481.mlab.com:25481/iotjs';
@@ -1067,3 +1067,46 @@ document.write(a); */
 // };
 
 // export { getTimePastIfLessThanDay };
+
+// * example
+
+// (() => {
+//     const refs = {
+//       openModalBtn: document.querySelector('[data-modal-open]'),
+//       closeModalBtn: document.querySelector('[data-modal-close]'),
+//       modal: document.querySelector('[data-modal]'),
+//     };
+
+//     refs.openModalBtn.addEventListener('click', toggleModal);
+//     refs.closeModalBtn.addEventListener('click', toggleModal);
+//     refs.modal.addEventListener('click', onBackdropClick);
+
+//     function toggleModal() {
+//       window.addEventListener('keydown', onEascapeKeyPressCloseModal); // {once: true}
+
+//       // console.log(refs.modal.classList.contains('is-hidden'));
+
+//       const isModalOpen = refs.openModalBtn.getAttribute(`aria-expended`) === `true` || false;
+//       refs.openModalBtn.setAttribute(`aria-expended`, !isModalOpen);
+
+//       const scrollLockMethod = !isModalOpen ? `disableBodyScroll` : `enableBodyScroll`;
+//       bodyScrollLock[scrollLockMethod](document.body);
+
+//       refs.modal.classList.toggle('is-hidden');
+//     }
+
+//     function onBackdropClick(event) {
+//       if (event.currentTarget === event.target) {
+//         refs.modal.classList.toggle('is-hidden');
+//       }
+//     }
+
+//     function onEascapeKeyPressCloseModal(event) {
+//       // console.log(event);
+//       if (event.code === 'Escape' && !refs.modal.classList.contains('is-hidden')) {
+//         refs.modal.classList.toggle('is-hidden');
+//         window.removeEventListener('keydown', onEascapeKeyPressCloseModal);
+//       }
+//       // console.log(event);
+//     }
+//   })();
